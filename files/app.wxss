@@ -1,0 +1,137 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/**app.wxss**/
+@import "src/wetoast.wxss";
+@import "style/weui.wxss";
+.slider{
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 2%;
+} 
+.teavaL_TOW{
+	width: 160rpx; 
+	height: 50rpx;
+}
+/*详情样式*/
+.item{
+    display: flex;
+    width: 100%;
+     background-color: #fff; 
+  }
+  .item-img {    
+    padding: 32rpx 28rpx;
+  }
+  .img{
+    width: 120rpx;
+    height: 120rpx;
+  }
+  .job{
+    margin-bottom: 4rpx;
+    padding-right: 80rpx;
+    position: relative;
+  }
+  .job-position{
+    font-size: 34rpx; 
+    color: #222;
+  }
+  .job-Salary{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #ff8401;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;  
+  }   
+  .company{
+    color: #666;
+    font-size: 28rpx;
+    margin-bottom: 4rpx;
+	display:flex;
+	margin-top: 2%;
+  }
+  .secondary{
+    font-size: 28rpx;
+    color: #999;
+	margin-top: 2%; 
+  }
+  .secondary-list{    
+	background: #1ed09f;
+    margin-right: 8rpx;
+	font-size: 22rpx;
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 3px;
+  }
+  .secondary-List{
+	 background: #333333;
+	 margin-right: 8rpx;
+	 font-size: 22rpx;
+	 color: #ffffff;
+	 padding: 2px;
+	 border-radius: 3px; 
+  }
+  .date{
+	 font-size: 24rpx;
+	color: #333333;
+    float: right;font-family:[PingFang];
+  }
+  .company_one{
+  	width: 24rpx;
+  	height: 30rpx;   
+  }
+  .company_img{
+  	width: 130rpx;
+  	height: 150rpx;
+  	margin-left: 22%;
+  }
+  .ptit_time{
+  	display: flex;
+  	align-items: center;
+  }
+  ._oneptit_time{
+  	width: 76%;
+  }
+  .ptit_time_Ont{
+  	padding-bottom: 10rpx;
+  }
+  .ptit-list{
+  	width: 90%;      
+  	margin: 0 auto;
+  	margin-top: 2%;
+  }
+  .button-t{
+  	width: 100%;
+  	display: flex;
+  	align-items: center;
+  	border: 1px solid #ededed;
+  	position: fixed;
+  	top: 93vh;
+	background: #ffffff;
+  }
+  .button-t image{
+  	width: 40rpx;
+  	height: 40rpx;
+  	margin-left: 4%;
+  }
+  .button-t button{
+  	padding: 0px;
+  	width:77%;
+  	margin: 0px;
+  	margin-left: 3%;
+  	background: #1ed09f;
+  	border-radius: 0px;
+  	color: #ffffff;
+  } 
+.collect{
+	width: 10%;
+	margin-left: 2%;  
+}

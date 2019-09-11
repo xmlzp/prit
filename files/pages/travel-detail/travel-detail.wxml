@@ -1,0 +1,94 @@
+<!--pages/travel-detail/travel-detail.wxml-->
+<view class="ptit-list">
+	<view class="item">
+	      <view class="item-main">
+	      <view class="job">
+	          <text class="job-position" data-id="{{id}}">必胜客都江堰招募服务员</text>
+	      </view>
+	      <view class="company">
+			  <view class="_oneptit_time">
+				   <view class="ptit_time_Ont">
+					  <image class="company_one" src="../../images/site.png"></image>
+					  <text>必胜客（都江堰点）</text>
+				   </view>
+				  <view class="ptit_time">
+					  <view><image class="company_one" src="../../images/opone.png"></image></view>
+					  <view> 咨询热线:028-2485555</view>
+				  </view>
+				  <view class="resource">
+					  <view>价格:120/人</view>
+				  </view>
+			  </view>
+			  <view>
+				<image class="company_img" src="../../images/dist/resource.png"></image>
+			  </view>
+	      </view>
+	      <view class="secondary">
+	          <text class="secondary-list">纯玩</text>
+	          <text class="secondary-List">上门接送</text>
+	          <text class="secondary-list">随时发团</text>
+	          <text class="date">发布时间:2019-10-15</text>
+	      </view>
+	      </view>
+	  </view>
+	  <view class="introduce">
+		  <image src="../../images/dist/lvse.png"></image>
+		  <text>景区介绍</text>
+	  </view>
+	  <view class="introduces">
+	  		  <image src="../../images/tratvl/zuone.jpg"></image>
+	  		  <text>【青城山景区】世界文化遗产、全 国重点文物保护单位,国家AAAAA 级旅游景区、全球道教天师道圣地， 中国四大道教名山之一，五大仙山之一，中国道教的发祥地之一，森林覆盖率%90以上，人杰地灵，风景优美享有 青城天下幽，的美誉
+			 </text>
+	  </view>
+	  <view class="introduces_img">
+		  <image src="../../images/tratvl/zuone.jpg"></image>
+		  <image src="../../images/tratvl/zuone.jpg"></image>
+		  <image src="../../images/tratvl/zutwo.jpg"></image>
+	  </view>
+	  <view class="introduce">
+	  		  <image src="../../images/dist/blue.png"></image>
+	  		  <text>服务流程</text>
+	  </view>
+	  <view class="introduc_flow">
+	  		<view>
+				<view class="introduc_flow_text">预定行程》</view>
+				<view>确认行程</view>
+				<view>立即预定</view>
+			</view>
+			<view>
+				<view class="introduc_flow_text">联系商家》</view>
+				<view>预定后与商家</view>
+				<view>联系商家</view>
+			</view>
+			<view>
+				<view class="introduc_flow_text">开始行程》</view>
+				<view>在商家的组织</view>
+				<view>下进行</view>
+			</view>
+			<view>
+				<view class="introduc_flow_text">完成行程</view>
+				<view>完成本次行程</view>
+				<view>结算费用</view>
+			</view>
+	  </view>
+	  <view class="introduce">
+	  		  <image src="../../images/dist/yowllow.png"></image>
+	  		  <text>行程内容</text>
+	  </view>
+	  <!-- 工作要求 -->
+	  <view>
+	  		  <view class="require_content">【行程时间】 正常发团时间早上8点半左右，回程时  间预计下午5点半左右。预定成功后100%发团。   </view>
+			  <view class="require_content">【集合地点】 都江堰市客运中心停车场。都江堰市区 内免费接人，也可自行前往集结地。</view>
+	  		  <view class="require_content">【行程包含】 青城山景区门票、索道门票、景区观光 车门票往返正规旅游车、午餐（特色川菜）、全程    优秀导游服务、旅游意</view>
+	  		  <view class="require_content">【行程路线】 早上8:30左右都江堰客运中心集合出发   →9:30左右到达青城山景区停车场 →乘坐景区观光   车前往景区大门早上8:30左右都江堰客运中心集合出发   →9:30左右到达青城山景区停车场 →乘坐景区观光   车前往景区大门</view>
+	  		  <view class="require_content">【温馨提示】 预定成功后，请保持手机畅通，旅行社    将在出发前一天晚上（19:00-20:00）与您取得联系，沟通行程相关事宜</view>
+			  <view class="require_content">【郑重承诺】 全程无强制消费、无购物店。</view>
+			  <view class="require_content">【商家联系方式】 15582825241 申女士  </view>
+	  </view>
+</view>
+<view style="height:10vh;"></view>
+  <view class="button-t" style="width: 100%;">
+	  		<image src="../../images/dist/tc.png"></image>
+	  		<view class="collect">收藏</view>
+	  		<button>立即预定</button>
+</view>

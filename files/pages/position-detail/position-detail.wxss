@@ -1,0 +1,185 @@
+/* pages/position-detail/position-detail.wxss */
+/* pages/rookie/rookie.wxss */
+.company_img{
+	width: 130rpx;
+	height: 150rpx;
+	margin-left: 22%;
+}
+.company_one{           
+	width: 24rpx;
+	height: 30rpx;   
+}
+.company text{ 
+	width: 50%;
+	margin-left: 2%;
+	color: #adadad;
+}
+.ptit-list{      
+	width: 90%;      
+	margin: 0 auto;
+	margin-top: 2%;
+}
+.slider{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 2%;
+} 
+.list-img{  
+	width: 100%;
+}
+.item{
+    display: flex;
+    width: 100%;
+     background-color: #fff; 
+  }
+  .item-img {    
+    padding: 32rpx 28rpx;
+  }
+  .img{
+    width: 120rpx;
+    height: 120rpx;
+  }
+  .item-main{
+    flex: 1;
+    padding: 32rpx 0rpx 10rpx 0;  
+    border-bottom: 1rpx solid #dcdcdc;
+    line-height: 1.4;
+  }
+  
+  .job{
+    margin-bottom: 4rpx;
+    padding-right: 80rpx;
+    position: relative;
+  }
+  .job-position{
+    font-size: 34rpx; 
+    color: #222;
+  }                             
+  .job-Salary{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #ff8401;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;  
+  }   
+  .company{
+    color: #666;
+    font-size: 28rpx;
+    margin-bottom: 4rpx;
+	display:flex;
+	margin-top: 2%;
+  }
+  .secondary{
+    font-size: 28rpx;
+    color: #999;
+	margin-top: 2%; 
+  }
+  .secondary-list{
+	background: #1ed09f;
+    margin-right: 8rpx;
+	font-size: 22rpx;
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 3px;
+  }
+  .secondary-List{
+	 background: #333333;
+	 margin-right: 8rpx;
+	 font-size: 22rpx;
+	 color: #ffffff;
+	 padding: 2px;
+	 border-radius: 3px; 
+  }
+  .date{
+	 font-size: 24rpx;
+	color: #333333;
+    float: right;font-family:[PingFang];
+  }
+  .require{
+	  display: flex;
+	  align-items: center;
+	  margin-top: 30rpx;
+  }
+  .require image{
+	  width: 20rpx;
+	  height: 30rpx;
+  }
+   .require text{
+	   font-size: 34rpx;
+	   font-weight: bold;
+	   margin-left: 2%;
+   }
+.flow image{
+	width: 20rpx;    
+	height: 30rpx;
+}  
+.flow text{
+	font-size: 34rpx;
+	font-weight: bold;
+	margin-left: 2%;
+}
+.content image{
+	width: 20rpx;
+	height: 30rpx;
+}
+.content text{
+	font-size: 34rpx;  
+	font-weight: bold;
+	margin-left: 2%;
+}
+.require_man{
+	padding: 10rpx 10rpx 25rpx 10rpx;
+	color: #5b5a5a;
+	font-size: 30rpx;
+	font-family: [PingFang];
+}
+.require_flow{
+	padding: 10rpx 10rpx 25rpx 10rpx;
+	color: #5b5a5a;
+	font-size: 30rpx;
+	font-family: [PingFang];
+}
+.require_content{
+	padding: 10rpx 10rpx 5rpx 10rpx;
+	color: #5b5a5a;
+	font-size: 30rpx;
+	font-family: [PingFang];
+}
+.button-t{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ededed;
+	position: absolute;
+	top: 93vh;
+}
+.button-t image{
+	width: 40rpx;
+	height: 40rpx;
+	margin-left: 4%;
+}
+.button-t button{
+	padding: 0px;
+	width:77%; 
+	margin: 0px;
+	margin-left: 3%;
+	background: #1ed09f;
+	border-radius: 0px;
+	color: #ffffff;
+}           
+.collect{
+	width: 10%;
+	margin-left: 2%;       
+}
+.ptit_time{
+	display: flex;
+	align-items: center;
+}
+._oneptit_time{
+	width: 76%;
+}
+.ptit_time_Ont{
+	padding-bottom: 10rpx;
+}

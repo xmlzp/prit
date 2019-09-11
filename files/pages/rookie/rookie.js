@@ -1,0 +1,88 @@
+// pages/rookie/rookie.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+		formation:[], //兼职信息列表
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+	 //兼职列表的信息
+	  wx.request({
+	           url: 'https://campus.jiandanst.com/index/wxapi/parttime',
+	           method: 'POST',
+	           dataType: 'json',
+	             header: {"Content-Type":"application/x-www-form-urlencoded"}, 
+	             success: (res)=>{ 
+	              console.log(res.data)
+	              this.setData({
+					formation:res.data
+	             })
+	           },
+	    });  
+  },
+  //详情页面的跳转
+  positionDetailTap: function (event) {
+		  let id = event.currentTarget.dataset.part_time_id;//获取点击下拉id 
+		  console.log(event.currentTarget.dataset.part_time_id)
+		      this.setData({
+		        id:id
+		      })
+          wx.navigateTo({
+              url: '../position-detail/position-detail'
+          });
+      },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

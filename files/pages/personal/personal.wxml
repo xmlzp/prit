@@ -1,0 +1,42 @@
+<!--pages/personal/personal.wxml-->
+<import src="../../src/wetoast.wxml"/>
+<view class="item-cells">
+  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
+  <image class="icon" src="/images/account.png" />
+    <view class="item-cell-bd">
+      <text class="detail-text">吴欣阳</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<view class="item-cells">
+  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
+  <image class="icon" src="/images/code.png" />
+    <view class="item-cell-bd">
+      <text class="detail-text">12311110327</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<view class="item-cells">
+  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
+  <image class="icon" src="/images/sex.png" />
+    <view class="item-cell-bd">
+      <text class="detail-text">男</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<view class="item-cells">
+  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
+  <image class="icon" src="/images/phone.png" />
+    <view class="item-cell-bd">
+      <text class="detail-text">13683435609</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+

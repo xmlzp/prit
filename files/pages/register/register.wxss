@@ -1,0 +1,83 @@
+/* pages/register/register.wxss */
+.register-panel{
+  width: 100%;
+}
+.icon{
+  width:20px;
+  height: 20px;
+  margin:10rpx 0 0 30rpx;  
+}
+.name{
+  display: flex;
+  border: 1px solid #C0C0C0;
+  width:90%;
+  height:70rpx;
+  margin-left: 35rpx;
+  border-radius:5rpx;
+  margin-top:40rpx;  
+}
+.code{
+  display: flex;
+  border: 1px solid #C0C0C0;
+  width:90%;
+  height:70rpx;
+  margin-left: 35rpx;
+  border-radius:5rpx;
+  margin-top:40rpx;  
+}
+.sex{
+  display: flex;
+  border: 1px solid #C0C0C0;
+  width:90%;
+  height:70rpx;
+  margin-left: 35rpx;
+  border-radius:5rpx;
+  margin-top:40rpx;  
+}
+.fill{
+  padding:10rpx 0 0 20rpx;
+  font-size:14px; 
+}
+.fill-picker-sex{
+   color: #787878;
+   padding:10rpx 0 0 20rpx;
+   font-size:14px;
+}
+.phone{
+  display: flex;
+  border: 1px solid #C0C0C0;
+  width:90%;
+  height:70rpx;
+  margin-left: 35rpx;
+  border-radius:5rpx;
+  margin-top:40rpx;  
+}
+.password{
+  display: flex;
+  border: 1px solid #C0C0C0;
+  width:90%;
+  height:70rpx;
+  margin-left: 35rpx;
+  border-radius:5rpx;
+  margin-top:40rpx;  
+}
+.portrait{
+  width:30%;
+  height:200rpx;
+  margin-left: 35rpx;
+  margin-top:40rpx;  
+}
+.btn-panel{
+  margin-top:30rpx;
+  height:120rpx;
+}
+.btn{
+   color: #fff;
+   background-color:#1fd0a0; 
+   width:90%;   
+   line-height:35px;
+
+}
+.btn-hover{
+  background-color: #1bc699
+}

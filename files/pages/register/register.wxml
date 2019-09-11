@@ -1,0 +1,51 @@
+<!--pages/register/register.wxml-->
+<import src="../../src/wetoast.wxml"/>
+<view class="register-panel">
+  <!--姓名-->
+  <view class="name">
+    <image class="icon" src="/images/account.png" />
+    <input class="fill" type="text" bindinput='nameBlur' placeholder="请输入姓名" maxlength="4" />
+  </view>
+  <!--学号-->
+  <view class="code">
+    <image class="icon" src="/images/code.png" />
+    <input class="fill" type="text" bindinput='codeBlur' placeholder="请输入学号" />
+  </view>
+
+  <!--性别-->
+  <view class="sex">
+    <image class="icon" src="/images/sex.png" />
+    <picker class="fill-picker-sex" bindchange="bindSexChange" value="{{sex}}" range="{{sexArray}}" name='type'>
+      <view wx:if="{{flat==true}}">
+        <text>{{sexArray[sex]}}</text>
+      </view>
+      <view wx:else>
+        <view class="fillSex">请选择性别</view>
+      </view>
+    </picker>
+  </view>
+
+  <!--手机号-->
+  <view class="phone">
+    <image class="icon" src="/images/phone.png" />
+    <input class="fill" type="number" bindinput='phoneBlur' placeholder="请输入联系方式"  maxlength="11" />
+  </view>
+
+  <!--密码-->
+  <view class="password">
+    <image class="icon" src="/images/password.png" />
+    <input class="fill" type="password" bindinput='passwordBlur' placeholder="请输入密码" />
+  </view>
+
+  <!--提示-->
+  <template is="wetoast" data="{{...__wetoast__}}"/>
+
+  <!--注册按钮-->
+  <view class="btn-panel">
+    <button class="btn" bindtap="register" hover-class="btn-hover">提交注册</button>
+  </view>
+
+
+
+
+</view>

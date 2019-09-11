@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+
+<!--图片-->
+ <view class="image-panel">
+   <image style="height:400rpx" src="/images/travel/login-bg.png"></image>
+</view>
+  <!--登录按钮-->
+  <view class="btn-panel">
+    <button class="btn" bindtap="login" hover-class="btn-hover" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+      <image class="wx-icon" src="/images/wx.png"/> 
+      <text class="wx-text">微信用户一键登录</text>
+      </button>
+  </view>
+
+   <!--说明-->
+  <view class="explain-panel">
+      <text class="explain1">微信用户一键登录</text>
+  </view>
+
+
+
+
+

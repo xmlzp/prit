@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="slider">
+    <swiper autoplay interval="3500" indicator-dots="{{false}}" indicator-dots="{{true}}" indicator-color="rgba(0,0,0,3)" indicator-active-color="#ffffff">
+        <swiper-item>
+            <image src="../../images/tratvl/tc.png" class="list-img"                 
+             mode="aspectFill" width="375" height="190">    
+            </image>
+        </swiper-item>
+        <swiper-item>
+        <!--设置图片-->
+             <image src="../../images/tratvl/tc.png" class="list-img"
+				mode="aspectFill" width="400" height="100">  
+            </image>
+        </swiper-item>
+          <swiper-item>
+        <!--设置图片-->
+             <image src="../../images/tratvl/tc.png" class="list-img"
+             mode="aspectFill" width="375" height="150">  
+            </image>
+        </swiper-item>
+    </swiper>
+	<view class="list-contone">
+		<image src="../../images/dist/lvse.png"></image>
+		<text class="account_img">精选</text>
+		<text class="text_comton">周边游</text>
+		<text class="text_comton">情侣游</text>
+		<text class="text_comton">游乐园</text>
+	</view>
+	<view class="outer_layer" >
+		<view class="travel_titile" catchtap="traveldetail">
+			<view class="travel_img">
+				<image src="../../images/banner.png"></image>
+			</view>
+			<view class="traval_txxt">
+				<text>【国庆热门】桂林阳朔纯玩五日</text>
+				<text class="Account">  (五强制消费/吴应先行时代的)</text>
+				<view class="btn-cancel_herder">
+					<text class="texT_MOMOY">1200</text>
+					<text class="texT_M">元</text>
+					<image class="teavaL_TOW" src="../../images/tratvl/baoming.png"></image>
+				</view>
+				<view class="account_texts">报名时间：2019月910日到9月30日,报完即止!</view>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view class="travel_titile">
+			<view class="travel_img">
+				<image src="../../images/banner.png"></image>
+			</view>
+			<view class="traval_txxt">
+				<text>【国庆热门】桂林阳朔纯玩五日</text>
+				<text class="Account">  (五强制消费/吴应先行时代的)</text>
+				<view class="btn-cancel_herder">
+					<text class="texT_MOMOY">1200</text>
+					<text class="texT_M">元</text>
+					<image class="teavaL_TOW" src="../../images/tratvl/baoming.png"></image>
+				</view>
+				<view class="account_texts">报名时间：2019月910日到9月30日,报完即止!</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,57 @@
+<!-- 页面顶部图片 -->
+<view class="slider">
+    <swiper autoplay interval="3500" indicator-dots="{{false}}" indicator-dots="{{true}}" indicator-color="rgba(38,136,181,1)" indicator-active-color="#fff">
+        <swiper-item>
+            <image src="../../images/banner.png" class="list-img" 
+             mode="aspectFill" width="200" height="216">    
+            </image>
+        </swiper-item>
+        <swiper-item>
+        <!--设置图片-->
+             <image src="../../images/banner.png" class="list-img"
+				mode="aspectFill" width="400" height="100">  
+            </image>
+        </swiper-item>
+          <swiper-item>
+        <!--设置图片-->
+             <image src="../../images/banner.png" class="list-img"
+             mode="aspectFill" width="375" height="150">  
+            </image>
+        </swiper-item>
+    </swiper>
+</view>
+<view>
+  <scroll-view scroll-y style="height: {{viewHeigh}}px;" bindscrolltolower="lower">
+    <view bindtap="positionDetailTap" class="ptit-list"  wx:for="{{formation}}" data-id='{{item.part_time_id}}' >
+      <view class="item">
+            <view class="item-main">
+            <view class="job">
+                <text class="job-position" data-id="{{id}}">{{item.part_time_name}}</text>
+                <text class="job-Salary">{{item.part_time_wages}}</text>
+            </view>
+            <view class="company">
+				<image src="../../images/site.png"></image>
+                <text>{{item.part_time_shop_address}}</text>
+				<image class="teavaL_TOW" src="../../images/tratvl/baoming.png"></image>
+            </view>
+            <view class="secondary">
+                <text class="secondary-list">月结</text>
+                <text class="secondary-Iist">男女不限</text>
+                <text class="date">{{item.part_time_time}}</text>
+            </view>
+            </view>
+        </view>
+	 </view>
+    <view class="loading" hidden="{{loadingHidden}}">{{loadingText}}</view>
+  </scroll-view>
+
+   <!-- <view class="alert-rookie" hidden="{{alertRookie}}"> 
+    <view class="mode-rookie"></view> -->
+    <!-- <view class="content-rookie">
+        <image class="alert-img" src="/images/alert_rookie.png"></image>
+        <view class="close-box" bindtap="closeAlertRookieTap">
+            <image src="/images/close_rookie.png"></image>
+        </view>
+    </view> -->
+  <!-- </view> -->
+ </view> 

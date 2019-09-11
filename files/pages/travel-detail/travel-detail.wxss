@@ -1,0 +1,56 @@
+/* pages/travel-detail/travel-detail.wxss */
+ .item-main{
+    flex: 1;
+    padding: 0rpx 0rpx 10rpx 0;  
+    border-bottom: 1rpx solid #dcdcdc;
+    line-height: 1.4;
+  }
+  .resource{
+	  color: #ff5501;
+	  font-size: 32rpx;
+	  margin-top: 4%;
+  } 
+  .introduce{
+	  display: flex;
+	  align-items: center;
+	  padding: 20rpx 0rpx;
+  }
+  .introduce image{
+	  height: 30rpx;
+	  width: 20rpx;
+  }      
+  .introduce text{
+	  font-family: Adobe 黑体 Std;
+	  font-size: 32rpx;
+	  margin-left: 2%;
+  }
+  .introduces image{
+	  
+	  height: 310rpx;
+	  width: 240rpx;
+  }
+   .introduces{
+	   display: flex;
+   }
+   .introduces text{
+	   font-size: 26rpx;
+	   width: 65%;
+	   margin-left: 5%;
+   } 
+   .introduces_img image{
+	   width: 100%;
+	   height: 350rpx;
+   }
+   .introduc_flow{
+	   display: flex;
+	   padding-left: 1%;
+   }
+   .introduc_flow view{
+	   font-size: 24rpx;
+	   margin-left:10rpx;
+	   color: #666666;
+   }
+   .introduc_flow_text{
+	     font-size: 28rpx !important;
+		  color: #666666;
+   }

@@ -1,0 +1,35 @@
+/* pages/login/login.wxss */
+.image-panel{
+  width: 100%;
+}
+.wx-icon{
+  width:20px;
+  height: 20px;
+}
+.wx-text{
+  margin-left:2% 
+}
+.btn-panel{
+  margin-top:30rpx;
+}
+.explain-panel{
+  display: flex;
+  margin-top:60rpx;
+}
+.explain1{
+  font-size:14px;
+  color: #D0D0D0;
+}
+.btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   background-color:#1fd0a0; 
+   width:90%;
+   height:80rpx;    
+}
+.btn-hover{
+  background-color: #1bc699
+}
+
