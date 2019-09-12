@@ -1,9 +1,7 @@
 {
   "pages": [
+	"pages/index/index",
     "pages/my/my",
-    "pages/sign/sign",
-    "pages/register/register",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/rookie/rookie",
     "pages/messages/messages",
@@ -12,10 +10,7 @@
     "pages/position-detail/position-detail",
     "pages/login/login",
     "pages/personal/personal",
-    "pages/travel-detail/travel-detail",
-    "pages/collection/collection",
-    "pages/reservation/reservation"
-
+    "pages/travel-detail/travel-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
