@@ -101,23 +101,6 @@ Page({
   },
 
   /**
-   *手机号获取 
-   */
-  phoneBlur: function(res) {
-    this.setData({
-      phone: res.detail.value
-    })
-  },
-  /**
-   *密码获取 
-   */
-  passwordBlur: function(res) {
-    this.setData({
-      password: res.detail.value
-    })
-  },
-
-  /**
    * 注册
    */
   register: function() {
@@ -129,45 +112,52 @@ Page({
         title: "请输入姓名",
         duration: 1000
       })
-      return
+      return false
     }
     if (this.data.code == null) {
       that.wetoast.toast({
         title: "请输入学号",
         duration: 1000
       })
-      return
+      return false
     }
     if (this.data.sex == null) {
       that.wetoast.toast({
         title: "请选择性别",
         duration: 1000
       })
-      return
+      return false
     }
-    if (this.data.phone == null) {
-      that.wetoast.toast({
-        title: "请输入手机号",
-        duration: 1000
-      })
-      return
-    }
-    var phoneReg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
-    if (!phoneReg.test(this.data.phone)) {
-      that.wetoast.toast({
-        title: "手机号码不正确",
-        duration: 1000
-      })
-      return
-    }
+    wx.showToast({
+       title: '提交成功',
+       icon: 'success',
+       duration: 2000,
+        success: function () {
+         setTimeout(function () {
+           wx.switchTab({
+             url: '../index/index',
+           })
+         }, 2000)
+        }
+     })
+    //  wx.request({
+    //       url: "https://campus.jiandanst.com/index/wxapi/weixinlogin",
+    //       data: {
+    //         code: code,
+    //         encryptedData: encryptedData,
+    //         iv: iv
+    //       },
+    //       header: {
+    //         'content-type': 'application/json'
+    //       },
+    //       method: 'POST',
+    //       success: function(data) {
+    //         console.log(data);
+    //       }
+    //     })
+  
 
-    if (this.data.password == null) {
-      that.wetoast.toast({
-        title: "请输入密码",
-        duration: 1000
-      })
-      return
-    }
   },
+
 
 })

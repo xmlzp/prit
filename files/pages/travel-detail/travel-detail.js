@@ -62,5 +62,38 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 立即预定
+   */
+  reservation: function () {
+    wx.getStorage({
+      key: 'phone',
+      success(res) {
+        console.log(res.data);
+        if (res.data == "" || res.data == null) {
+          wx.showModal({
+            title: '提示',
+            content: '尊敬的用户，你未登录，请登录后立即预定',
+            confirmText: "确定",
+            showCancel: false,
+            success: function (res) {
+              if (res.confirm) {
+                wx.navigateTo({
+                  url: '../login/login',
+                })
+              }
+            }
+          })
+        } else {
+          wx.showToast({
+            title: '预定成功',
+            icon: 'success',
+            duration: 2000,
+          })
+        }
+      }
+    })
   }
 })

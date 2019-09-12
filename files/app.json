@@ -1,15 +1,21 @@
 {
   "pages": [
-	"pages/index/index",
-	"pages/travel-detail/travel-detail",
+    "pages/my/my",
+    "pages/sign/sign",
+    "pages/register/register",
+    "pages/index/index",
     "pages/logs/logs",
     "pages/rookie/rookie",
     "pages/messages/messages",
-    "pages/my/my",
     "pages/tal/position-item/position-item",
     "pages/tal/search/search",
     "pages/position-detail/position-detail",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/personal/personal",
+    "pages/travel-detail/travel-detail",
+    "pages/collection/collection",
+    "pages/reservation/reservation"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

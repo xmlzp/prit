@@ -2,7 +2,7 @@
 
 <!--图片-->
  <view class="image-panel">
-   <image style="height:400rpx" src="/images/travel/login-bg.png"></image>
+   <image class="img" src="/images/travel/login-bg.png"></image>
 </view>
   <!--登录按钮-->
   <view class="btn-panel">
@@ -14,7 +14,7 @@
 
    <!--说明-->
   <view class="explain-panel">
-      <text class="explain1">微信用户一键登录</text>
+      <text class="explain1">点击登录，即表示已阅读并同意</text>
   </view>
 
 

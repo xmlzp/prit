@@ -15,7 +15,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
   },
 
   /**
@@ -63,26 +62,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {},
-
-  /**
-   *手机号获取 
-   */
-  phoneBlur: function(res) {
-    this.setData({
-      phone: res.detail.value
-    })
-  },
-
-  /**
-   *密码获取 
-   */
-  passwordBlur: function(res) {
-    this.setData({
-      password: res.detail.value
-    })
-  },
-
-
   /**
    * 登录
    */
@@ -96,20 +75,40 @@ Page({
         console.log(iv);
         console.log(encryptedData);
         console.log(res.code);
-        wx.request({
-          url: "",
-          data: {
-            code: code,
-            encryptedData: encryptedData,
-            iv: iv
-          },
-          header: {
-            'content-type': 'application/json'
-          },
-          method: 'POST',
-          success: function(res) {},
-        })
+        that.register()
+        // wx.request({
+        //   url: "https://campus.jiandanst.com/index/wxapi/weixinlogin",
+        //   data: {
+        //     code: code,
+        //     encryptedData: encryptedData,
+        //     iv: iv
+        //   },
+        //   header: {
+        //     'content-type': 'application/json'
+        //   },
+        //   method: 'POST',
+        //   success: function(data) {
+        //     console.log(data);
+        //   }
+        // })
       }
     })
-  }
+    
+  },
+
+  register: function () {
+      wx.showModal({
+        title: '提示',
+        content: '尊敬的用户，你尚未完善所有信息，请完善个人信息',
+        confirmText: "确定",
+        showCancel: false,
+        success: function(res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../register/register',
+            })
+          }
+        }
+      })
+    }
 })
