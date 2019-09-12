@@ -3,20 +3,20 @@
 	<view class="item">
 	      <view class="item-main">
 	      <view class="job">
-	          <text class="job-position" data-id="{{id}}">必胜客都江堰招募服务员</text>
+	          <text class="job-position" data-id="{{id}}">{{detalis.tour_name}}</text>
 	      </view>
 	      <view class="company">
 			  <view class="_oneptit_time">
 				   <view class="ptit_time_Ont">
 					  <image class="company_one" src="../../images/site.png"></image>
-					  <text>必胜客（都江堰点）</text>
+					  <text>{{detalis.tour_address}}</text>
 				   </view>
 				  <view class="ptit_time">
 					  <view><image class="company_one" src="../../images/opone.png"></image></view>
-					  <view> 咨询热线:028-2485555</view>
+					  <view> 咨询热线:{{detalis.tour_phone}}</view>
 				  </view>
 				  <view class="resource">
-					  <view>价格:120/人</view>
+					  <view>价格:{{detalis.tour_price}}/人</view>
 				  </view>
 			  </view>
 			  <view>
@@ -27,7 +27,7 @@
 	          <text class="secondary-list">纯玩</text>
 	          <text class="secondary-List">上门接送</text>
 	          <text class="secondary-list">随时发团</text>
-	          <text class="date">发布时间:2019-10-15</text>
+	          <text class="date">发布时间:{{detalis.tour_time}}</text>
 	      </view>
 	      </view>
 	  </view>
@@ -36,7 +36,7 @@
 		  <text>景区介绍</text>
 	  </view>
 	  <view class="introduces">
-	  		  <image src="../../images/tratvl/zuone.jpg"></image>
+	  		  <image src="{{detalis.tour_pic_one}}"></image>
 	  		  <text>【青城山景区】世界文化遗产、全 国重点文物保护单位,国家AAAAA 级旅游景区、全球道教天师道圣地， 中国四大道教名山之一，五大仙山之一，中国道教的发祥地之一，森林覆盖率%90以上，人杰地灵，风景优美享有 青城天下幽，的美誉
 			 </text>
 	  </view>
@@ -87,7 +87,7 @@
 	  </view>
 </view>
 <view style="height:10vh;"></view>
-  <view class="button-t" style="width: 100%;">
+  <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
 	  		<image src="../../images/dist/tc.png"></image>
 	  		<view class="collect">收藏</view>
 	  		<button>立即预定</button>

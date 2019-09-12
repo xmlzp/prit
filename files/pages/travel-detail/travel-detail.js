@@ -5,14 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+		windowHeight:'',
+		tour_id:'' ,//旅游详情页面的id
+		detalis:'' //详情页面的数据
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options){
+		let tour_id = options.tour_id
+		console.log(options.tour_id)
+		var windowHeight = wx.getSystemInfoSync().windowHeight
+		console.log(wx.getSystemInfoSync().windowHeight)
+		//跳转详情页面
+		this.setData({
+			windowHeight:windowHeight,
+			tour_id:tour_id
+		});
+	wx.request({
+		url: 'https://campus.jiandanst.com/index/wxapi/tour_info',
+		    method: 'POST',
+		    dataType: 'json',
+		    data:{
+				"tour_id":tour_id
+		    },
+		    header: {"Content-Type":"application/x-www-form-urlencoded"},
+		    success: (res)=>{ 
+		      console.log(res.data)
+		       this.setData({
+					detalis:res.data
+		            })
+		        },
+		});
   },
 
   /**

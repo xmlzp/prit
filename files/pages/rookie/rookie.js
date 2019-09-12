@@ -6,6 +6,7 @@ Page({
    */
   data: {
 		formation:[], //兼职信息列表
+		part_time_id:'' //兼职列表的id
   },
 
   /**
@@ -19,7 +20,7 @@ Page({
 	           dataType: 'json',
 	             header: {"Content-Type":"application/x-www-form-urlencoded"}, 
 	             success: (res)=>{ 
-	              console.log(res.data)
+	              // console.log(res.data)
 	              this.setData({
 					formation:res.data
 	             })
@@ -28,13 +29,12 @@ Page({
   },
   //详情页面的跳转
   positionDetailTap: function (event) {
-		  let id = event.currentTarget.dataset.part_time_id;//获取点击下拉id 
-		  console.log(event.currentTarget.dataset.part_time_id)
+		  let part_time_id = event.currentTarget.dataset.id;//获取点击下拉id 
 		      this.setData({
-		        id:id
+		        part_time_id:part_time_id
 		      })
           wx.navigateTo({
-              url: '../position-detail/position-detail'
+              url: '../position-detail/position-detail?part_time_id='+this.data.part_time_id
           });
       },
   /**

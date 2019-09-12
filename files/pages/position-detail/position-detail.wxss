@@ -152,8 +152,7 @@
 	display: flex;
 	align-items: center;
 	border: 1px solid #ededed;
-	position: absolute;
-	top: 93vh;
+	position:fixed;
 }
 .button-t image{
 	width: 40rpx;

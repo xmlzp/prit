@@ -3,18 +3,18 @@
 	<view class="item">
 	      <view class="item-main">
 	      <view class="job">
-	          <text class="job-position" data-id="{{id}}">必胜客都江堰招募服务员</text>
-	          <text class="job-Salary">2 0 / 小 时</text>
+	          <text class="job-position" data-id="{{id}}">{{detali.part_time_name}}</text>
+	          <text class="job-Salary">{{detali.part_time_wages}}</text>
 	      </view>
 	      <view class="company">
 			  <view class="_oneptit_time">
 				   <view class="ptit_time_Ont">
 					  <image class="company_one" src="../../images/site.png"></image>
-					  <text>必胜客（都江堰点）</text>
+					  <text>{{detali.part_time_shop_address}}</text>
 				   </view>
 				  <view class="ptit_time">
 					  <view><image class="company_one" src="../../images/opone.png"></image></view>
-					  <view> 咨询热线:028-2485555</view>
+					  <view> 咨询热线:{{detali.part_time_phone}}</view>
 				  </view>
 			  </view>
 			  <view>
@@ -22,40 +22,31 @@
 			  </view>
 	      </view>
 	      <view class="secondary">
-	          <text class="secondary-list">月结</text>
-	          <text class="secondary-List">男女不限</text>
-	          <text class="secondary-list">法定节假日</text>
-	          <text class="date">发布时间：2019-10-15</text>
+	          <text class="secondary-list">{{detali.part_time_settlement_cycle}}</text>
+	          <text class="secondary-List">{{detali.part_time_sex}}</text>
+	          <text class="secondary-list">{{detali.part_time_vacation}}</text>
+	          <text class="date">发布时间：{{detali.part_time_time}}</text>
 	      </view>
 	      </view>
-	  </view>
+	</view>
 	 <!-- 工作要求 -->
 	 <view>
 		 <view class="require"> 
 	 		 <image src="../../images/dist/blue.png"></image>
 	 		 <text>工作要求</text>
 		 </view>
-		 <view class="require_man">男女不限 学历不限</view>
-	 </view>
-	 <view>
-		 <view class="flow"> 
-			 <image src="../../images/dist/lvse.png"></image>
-			 <text>工作流程</text>
-		 </view> 
-		 <view class="require_flow">男女不限 学历不限</view>
+		 <view class="require_man">{{detali.part_time_ask}}</view>
 	 </view>
 	 <view>
 		  <view class="content"> 
 	 		 <image src="../../images/dist/blue.png"></image>
 	 		 <text>工作内容</text>
 		  </view>      
-		  <view class="require_content">【任务】 前厅服务员</view>
-		  <view class="require_content">【时间】 前厅服务员</view>
-		  <view class="require_content">【地址】 前厅服务员</view>
-		  <view class="require_content">【电话联系】 前厅服务员</view>
+		  <view class="require_content">{{detali.part_time_content}}</view>
 	 </view>
 </view>
- <view class="button-t" style="width: 100%;">
+<view style="height: 10vh;"></view>
+ <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
 		<image src="../../images/dist/tc.png"></image>
 		<view class="collect">收藏</view>
 		<button>立即报名</button>

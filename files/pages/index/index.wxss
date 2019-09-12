@@ -34,8 +34,9 @@ swiper{
 .travel_img image{
 	width: 210rpx;
 	height: 210rpx;
+	border-radius: 5px;
 }
-.travel_titile{
+.travel_titile{             
 	display: flex;
 	border-bottom: 1px solid #eaeaea;
 }
@@ -43,18 +44,22 @@ swiper{
 	font-size: 34rpx;
 	font-family: Adobe 黑体 Std;
 }
+.traval_txxt{
+	width: 65%;
+	margin-left: 3%;
+}
 .traval_tx{
 	font-size: 34rpx;
 	font-family: Adobe 黑体 Std;
 }
 .teavaL_TOW{
 	width: 160rpx; 
-	height: 50rpx; 
-}
+	height: 50rpx;  
+}                        
 .texT_MOMOY{
 	font-size: 48rpx !important;
 	color: #ff5501;
-	margin-left: 3%;
+	margin-left: 3%;      
 }
 .texT_M{
 	margin-top: 2%;
@@ -62,20 +67,24 @@ swiper{
 	font-size: 28rpx !important;
 	color: #ff5501;
 }
-.btn-cancel_herder{
-	display: flex;
+.btn-cancel_herder{ 
+	display: flex;         
 	align-items: center;
+	width: 100%;
 }
 .btn-cancel_herder image{ 
 	margin-left: 29%; 
 }
 .account_texts{ 
-	margin-left: 4%; 
+	margin-left: 2%;   
 	font-size: 22rpx;
 	font-family:  Adobe 黑体 Std;
 }
 .Account{
-	margin-left: 4%;
+	margin-left: 2%;
+	width: 100%;
+	font-family:Adobe 黑体 Std;
+	font-size: 34rpx;
 }
 .outer_layer{
 	margin-bottom: 20rpx;

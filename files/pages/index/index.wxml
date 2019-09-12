@@ -27,36 +27,21 @@
 		<text class="text_comton">游乐园</text>
 	</view>
 	<view class="outer_layer" >
-		<view class="travel_titile" catchtap="traveldetail">
+		<view class="travel_titile" catchtap="traveldetail" wx:for="{{travel}}" data-id='{{item.tour_id}}'>
 			<view class="travel_img">
-				<image src="../../images/banner.png"></image>
+				<image src="{{item.tour_pic_one}}"></image>
 			</view>
 			<view class="traval_txxt">
-				<text>【国庆热门】桂林阳朔纯玩五日</text>
-				<text class="Account">  (五强制消费/吴应先行时代的)</text>
+				<text>{{item.tour_name}}</text>
+				<view class="Account">(无强制消费/无隐形购物店)...</view>
 				<view class="btn-cancel_herder">
-					<text class="texT_MOMOY">1200</text>
-					<text class="texT_M">元</text>
+					<view style="display: flex;width: 40%;">
+						<text class="texT_MOMOY">{{item.tour_price}}</text>
+						<text class="texT_M">元</text>
+					</view>
 					<image class="teavaL_TOW" src="../../images/tratvl/baoming.png"></image>
 				</view>
-				<view class="account_texts">报名时间：2019月910日到9月30日,报完即止!</view>
-			</view>
-		</view>
-	</view>
-	<view>
-		<view class="travel_titile">
-			<view class="travel_img">
-				<image src="../../images/banner.png"></image>
-			</view>
-			<view class="traval_txxt">
-				<text>【国庆热门】桂林阳朔纯玩五日</text>
-				<text class="Account">  (五强制消费/吴应先行时代的)</text>
-				<view class="btn-cancel_herder">
-					<text class="texT_MOMOY">1200</text>
-					<text class="texT_M">元</text>
-					<image class="teavaL_TOW" src="../../images/tratvl/baoming.png"></image>
-				</view>
-				<view class="account_texts">报名时间：2019月910日到9月30日,报完即止!</view>
+				<view class="account_texts">报名时间{{item.tour_time}}到{{item.tour_time_end}},报完即止!</view>
 			</view>
 		</view>
 	</view>
