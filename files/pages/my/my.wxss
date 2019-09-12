@@ -100,7 +100,7 @@ page{
 .icon{
   width:20px;
   height: 20px; 
-  margin-top: 5rpx;
+  margin-top: -10rpx;
 }
 .detail-text{
   margin-left:15rpx; 

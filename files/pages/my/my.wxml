@@ -3,8 +3,7 @@
 <!--顶部-->
 <view class="my-header">
   <view class="item-user-avatar">
-    <!-- <button class="button-img" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> -->
-    <image class="user-avatar" src="/images/user.png" mode="aspectFill" bindtap="login"></image>
+    <image class="user-avatar" src="/images/user.png" mode="aspectFill" bindtap="option"></image>
   </view>
 
   <!--登录-->
@@ -24,7 +23,7 @@
 <!--常见问题-->
 <view class="item-cells">
   <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="question">
-    <image class="icon" src="/images/question.png" />
+    <icon class="icon iconfont icon-changjianwenti"/>
     <view class="item-cell-bd">
       <text class="detail-text">常见问题</text>
     </view>
@@ -35,7 +34,7 @@
 <!--我的收藏-->
 <view class="item-cells">
   <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="collection">
-    <image class="icon" src="/images/collection.png" />
+    <icon class="icon iconfont icon-shoucang"/>
     <view class="item-cell-bd">
       <text class="detail-text">我的收藏</text>
     </view>
@@ -46,9 +45,20 @@
 <!--意见反馈-->
 <view class="item-cells">
   <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="opinion">
-    <image class="icon" src="/images/opinion.png" />
+      <icon class="icon iconfont.icon-opinion"/>
     <view class="item-cell-bd">
       <text class="detail-text">意见反馈</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<!--我的预定-->
+<view class="item-cells">
+  <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="reservation">
+    <icon class="icon iconfont icon-yuding"/>
+    <view class="item-cell-bd">
+      <text class="detail-text">我的预定</text>
     </view>
     <view class="item-cell-ft"></view>
   </view>
@@ -57,7 +67,7 @@
 <!--我的报名-->
 <view class="item-cells">
   <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="sign">
-    <image class="icon" src="/images/sign.png" />
+    <icon class="icon iconfont icon-baoming"/>
     <view class="item-cell-bd">
       <text class="detail-text">我的报名</text>
     </view>

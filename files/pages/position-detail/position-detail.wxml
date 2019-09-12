@@ -9,12 +9,23 @@
 	      <view class="company">
 			  <view class="_oneptit_time">
 				   <view class="ptit_time_Ont">
+<<<<<<< HEAD
 					  <image class="company_one" src="../../images/site.png"></image>
 					  <text>{{detali.part_time_shop_address}}</text>
 				   </view>
 				  <view class="ptit_time">
 					  <view><image class="company_one" src="../../images/opone.png"></image></view>
 					  <view> 咨询热线:{{detali.part_time_phone}}</view>
+=======
+				 <icon class=" iconfont icon-didian" />
+					  <text>必胜客（都江堰点）</text>
+				   </view>
+				  <view class="ptit_time">
+					  <view>
+             <icon class="icon-phone iconfont icon-weibiaoti-" />
+            </view>
+					  <view> 咨询热线:028-2485555</view>
+>>>>>>> b32f1cd317fd7090d1acf1dc8a002f73945654fc
 				  </view>
 			  </view>
 			  <view>
@@ -49,5 +60,5 @@
  <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
 		<image src="../../images/dist/tc.png"></image>
 		<view class="collect">收藏</view>
-		<button>立即报名</button>
+		<button bindtap="sign">立即报名</button>
 </view>

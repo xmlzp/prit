@@ -6,77 +6,83 @@ Page({
    * 页面的初始数据
    */
   data: {
-    flag:false,
-    user:'志哥'
+    flag: false,
+    user: '志哥'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {},
+  onShareAppMessage: function () { },
 
 
   /**
-   * 登录
+   * 操作
    */
-  login: function() {
-    wx.navigateTo({
-      url: '../login/login',
-    })
+  option: function () {
+    if (this.data.user == "zsdszd") {
+      wx.navigateTo({
+        url: '../personal/personal',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    }
   },
 
   /**
    * 常见问题
    */
-  question: function() {
+  question: function () {
     var that = this;
     new app.WeToast();
     that.wetoast.toast({
@@ -88,7 +94,7 @@ Page({
   /**
    * 我的收藏
    */
-  collection: function() {
+  collection: function () {
     new app.WeToast();
     this.wetoast.toast({
       title: "暂未开放",
@@ -99,7 +105,7 @@ Page({
   /**
    * 意见反馈
    */
-  opinion: function() {
+  opinion: function () {
     new app.WeToast();
     this.wetoast.toast({
       title: "暂未开放",
@@ -108,13 +114,20 @@ Page({
   },
 
   /**
+  * 我的预定
+  */
+  reservation: function () {
+    wx.navigateTo({
+      url: '../reservation/reservation',
+    })
+  },
+
+  /**
    * 我的报名
    */
-  sign: function() {
-    new app.WeToast();
-    this.wetoast.toast({
-      title: "暂未开放",
-      duration: 1000
+  sign: function () {
+    wx.navigateTo({
+      url: '../sign/sign',
     })
   },
 })

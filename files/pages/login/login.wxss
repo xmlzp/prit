@@ -2,6 +2,10 @@
 .image-panel{
   width: 100%;
 }
+.img{
+  height: 400rpx;
+  width:100%; 
+}
 .wx-icon{
   width:20px;
   height: 20px;
@@ -14,12 +18,19 @@
 }
 .explain-panel{
   display: flex;
-  margin-top:60rpx;
+  justify-content: center;
+  margin-top:80rpx;
+  width: 100%;
 }
 .explain1{
   font-size:14px;
-  color: #D0D0D0;
+  color: #A8A8A8;
 }
+/* .explain2{
+  font-size:14px;
+  color: #0066CC;
+  width: 50%;
+} */
 .btn{
    display: flex;
    align-items: center;

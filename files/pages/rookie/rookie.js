@@ -25,7 +25,11 @@ Page({
 					formation:res.data
 	             })
 	           },
-	    });  
+	    });
+    wx.setStorage({
+      key: "phone",
+      data: "13321232123"
+    })  
   },
   //详情页面的跳转
   positionDetailTap: function (event) {

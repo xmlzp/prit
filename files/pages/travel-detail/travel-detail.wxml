@@ -14,6 +14,14 @@
 				  <view class="ptit_time">
 					  <view><image class="company_one" src="../../images/opone.png"></image></view>
 					  <view> 咨询热线:{{detalis.tour_phone}}</view>
+					     <icon class=" iconfont icon-didian" />
+					  <text>必胜客（都江堰点）</text>
+				   </view>
+				  <view class="ptit_time">
+					  <view>
+             <icon class="icon-phone iconfont icon-weibiaoti-" />
+            </view>
+					  <view> 咨询热线:028-2485555</view>
 				  </view>
 				  <view class="resource">
 					  <view>价格:{{detalis.tour_price}}/人</view>
@@ -29,6 +37,7 @@
 	          <text class="secondary-list">随时发团</text>
 	          <text class="date">发布时间:{{detalis.tour_time}}</text>
 	      </view>
+
 	      </view>
 	  </view>
 	  <view class="introduce">
@@ -90,5 +99,5 @@
   <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
 	  		<image src="../../images/dist/tc.png"></image>
 	  		<view class="collect">收藏</view>
-	  		<button>立即预定</button>
+	  		<button bindtap="reservation">立即预定</button>
 </view>
