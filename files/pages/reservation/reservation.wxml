@@ -1,0 +1,22 @@
+<scroll-view scroll-y style="height: {{viewHeigh}}px;" bindscrolltolower="lower">
+  <view class="ptit-list" wx:for="{{formation}}">
+    <view class="item">
+      <view class="item-main">
+        <view class="job">
+          <text class="job-position" data-id="{{id}}">{{item.part_time_name}}</text>
+          <text class="job-Salary">预定中</text>
+        </view>
+        <view class="company">
+          <icon class=" iconfont icon-didian" />
+          <text class="address">{{item.part_time_shop_address}}</text>
+        </view>
+        <view class="secondary">
+          <icon class="icon-phone iconfont icon-weibiaoti-" />
+          <text class="phone">联系电话：028-52125475</text>
+          <text class="date">预定时间：{{item.part_time_time}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loadingHidden}}">{{loadingText}}</view>
+</scroll-view>

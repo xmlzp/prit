@@ -4,8 +4,7 @@
 }
 .icon{
   width:20px;
-  height: 20px;
-  margin:-3rpx 0 0 30rpx;  
+  margin-left:30rpx;  
 }
 .name{
   display: flex;
@@ -14,7 +13,8 @@
   height:70rpx;
   margin-left: 35rpx;
   border-radius:5rpx;
-  margin-top:40rpx;  
+  margin-top:40rpx; 
+  align-items:center;
 }
 .code{
   display: flex;
@@ -23,7 +23,8 @@
   height:70rpx;
   margin-left: 35rpx;
   border-radius:5rpx;
-  margin-top:40rpx;  
+  margin-top:40rpx;
+  align-items:center;  
 }
 .sex{
   display: flex;
@@ -32,10 +33,11 @@
   height:70rpx;
   margin-left: 35rpx;
   border-radius:5rpx;
-  margin-top:40rpx;  
+  margin-top:40rpx;
+  align-items:center; 
 }
 .fill{
-  padding:10rpx 0 0 20rpx;
+  padding-left: 20rpx;
   font-size:14px; 
 }
 .fill-picker-sex{

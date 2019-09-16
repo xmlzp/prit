@@ -54,6 +54,8 @@ page{
 .item-cell{
   padding: 36rpx 48rpx 36rpx 52rpx;
   display: flex;
+  align-items: center;
+
 }
 .item-cell-bd{
   flex: 1;
@@ -74,7 +76,7 @@ page{
     position: absolute;
     top: 50%;
     right: 4rpx;
-    margin-top: -10rpx; 
+    
 }  
 .register{
   display:block;
@@ -96,11 +98,6 @@ page{
 }
 .ext-box .item-cell-bd{
   text-align: center;
-}
-.icon{
-  width:20px;
-  height: 20px; 
-  margin-top: -10rpx;
 }
 .detail-text{
   margin-left:15rpx; 

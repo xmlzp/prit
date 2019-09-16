@@ -17,6 +17,8 @@ page{
 .item-cell{
   padding: 36rpx 48rpx 36rpx 52rpx;
   display: flex;
+  align-items: center;
+
 }
 .item-cell-bd{
   flex: 1;
@@ -37,16 +39,9 @@ page{
     position: absolute;
     top: 50%;
     right: 4rpx;
-    margin-top: -10rpx; 
 }  
-.icon{
-  width:20px;
-  height: 20px; 
-  margin-top: -5rpx;
-}
 .message{
   color: #A8A8A8;
-  margin-right:40rpx; 
 }
 .detail-text{
   margin-left:15rpx; 

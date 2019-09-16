@@ -1,4 +1,4 @@
-// pages/personal/personal.js
+// pages/reservation/reservation.js
 Page({
 
   /**
@@ -12,27 +12,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    var id = options.id;
     wx.request({
-      url: 'https://campus.jiandanst.com/index/wxapi/consumer',
-      data: {
-        consumer_id: id
-      },
-      header: {
-        'content-type': 'application/json'
-      },
+      url: 'https://campus.jiandanst.com/index/wxapi/parttime',
       method: 'POST',
-      success: function (res) {
-        console.log(res);
-        that.setData({
-          name: res.data.consumer_name,
-          number: res.data.consumer_student_id,
-          sex: res.data.consumer_sex,
-          phone: res.data.consumer_phone
+      dataType: 'json',
+      header: { "Content-Type": "application/x-www-form-urlencoded" },
+      success: (res) => {
+        console.log(res.data)
+        this.setData({
+          formation: res.data
         })
-      }
-    })   
+      },
+    });  
   },
 
   /**

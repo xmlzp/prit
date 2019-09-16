@@ -14,7 +14,7 @@
     </view>
 
    <view wx:else>
-      <view>{{user}}</view>
+      <view>{{name}}</view>
       <view class="user-small">点击头像可以查看</view>
     </view>
   </view>
