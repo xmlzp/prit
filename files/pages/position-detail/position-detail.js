@@ -39,37 +39,37 @@ Page({
 		              })
 		         },
 		 });
-	}
+	},
   /**
    * 立即报名
    */
-  // sign: function() {;
-  //   wx.getStorage({
-  //     key: 'phone',
-  //     success(res) {
-  //       console.log(res.data);
-  //        if(res.data =="" || res.data == null){
-  //          wx.showModal({
-  //            title: '提示',
-  //            content: '尊敬的用户，你未登录，请登录后立即报名',
-  //            confirmText: "确定",
-  //            showCancel: false,
-  //            success: function (res) {
-  //              if (res.confirm) {
-  //                wx.navigateTo({
-  //                  url: '../login/login',
-  //                })
-  //              }
-  //            }
-  //          })
-  //        } else {
-  //          wx.showToast({
-  //            title: '报名成功',
-  //            icon: 'success',
-  //            duration: 2000,
-  //          })
-  //        }
-  //     }
-  //   })
-  // }
+  sign: function() {;
+    wx.getStorage({
+      key: 'phone',
+      success(res) {
+        console.log(res.data);
+         if(res.data =="" || res.data == null){
+           wx.showModal({
+             title: '提示',
+             content: '尊敬的用户，你未登录，请登录后立即报名',
+             confirmText: "确定",
+             showCancel: false,
+             success: function (res) {
+               if (res.confirm) {
+                 wx.navigateTo({
+                   url: '../login/login',
+                 })
+               }
+             }
+           })
+         } else {
+           wx.showToast({
+             title: '报名成功',
+             icon: 'success',
+             duration: 2000,
+           })
+         }
+      }
+    })
+  }
 })
