@@ -12,6 +12,7 @@ Page({
     sex: null,
     phone: null,
     password: null,
+    consumer_id:''
 
   },
 
@@ -19,7 +20,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var id = options.id;
+     this.setData({
+       consumer_id:id
+     })
   },
 
   /**
@@ -101,11 +105,10 @@ Page({
   },
 
   /**
-   * 注册
-   */
-  register: function() {
+ * 注册
+ */
+  register: function () {
     var that = this
-    console.log(this.data.sex);
     new app.WeToast();
     if (this.data.name == null) {
       that.wetoast.toast({
@@ -128,36 +131,33 @@ Page({
       })
       return false
     }
+    wx.request({
+      url: "https://campus.jiandanst.com/index/wxapi/consumer_info_update",
+      data: {
+        consumer_id: this.data.consumer_id,
+        consumer_name: this.data.name,
+        consumer_student_id: this.data.code,
+        consumer_sex: this.data.sex
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      method: 'POST',
+      success: function (data) {
+        console.log(data);
+      }
+    })
     wx.showToast({
-       title: '提交成功',
-       icon: 'success',
-       duration: 2000,
-        success: function () {
-         setTimeout(function () {
-           wx.switchTab({
-             url: '../index/index',
-           })
-         }, 2000)
-        }
-     })
-    //  wx.request({
-    //       url: "https://campus.jiandanst.com/index/wxapi/weixinlogin",
-    //       data: {
-    //         code: code,
-    //         encryptedData: encryptedData,
-    //         iv: iv
-    //       },
-    //       header: {
-    //         'content-type': 'application/json'
-    //       },
-    //       method: 'POST',
-    //       success: function(data) {
-    //         console.log(data);
-    //       }
-    //     })
-  
-
+      title: '提交成功',
+      icon: 'success',
+      duration: 2000,
+      success: function () {
+        setTimeout(function () {
+          wx.switchTab({
+            url: '../index/index',
+          })
+        }, 2000)
+      }
+    })
   },
-
-
 })

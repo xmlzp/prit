@@ -10,7 +10,9 @@
     "pages/position-detail/position-detail",
     "pages/login/login",
     "pages/personal/personal",
-    "pages/travel-detail/travel-detail"
+    "pages/travel-detail/travel-detail",
+    "pages/reservation/reservation",
+    "pages/sign/sign"
   ],
   "window": {
     "backgroundTextStyle": "light",

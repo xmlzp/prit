@@ -1,0 +1,23 @@
+/* pages/sign/sign.wxss */
+.company image{
+	width: 25rpx;
+	height: 30rpx;
+}
+.item{
+    display: flex;   
+    width: 100%;
+     background-color: #fff; 
+  }
+  .item-img {
+    padding: 32rpx 28rpx; 
+  }  
+  .img{
+    width: 120rpx;
+    height: 120rpx;
+  }
+  .item-main{
+    flex: 1;
+    padding: 32rpx 0rpx 10rpx 0;  
+    border-bottom: 1rpx solid #dcdcdc;
+    line-height: 1.4;
+  }

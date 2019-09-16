@@ -1,46 +1,49 @@
 <!--pages/personal/personal.wxml-->
-<import src="../../src/wetoast.wxml"/>
+<import src="../../src/wetoast.wxml" />
 <view class="item-cells">
-  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
-   <icon class="icon iconfont icon-xingming"/>
+  <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="bindName">
+    <icon class="icon iconfont icon-xingming" />
     <view class="item-cell-bd">
       <text class="detail-text">姓名</text>
     </view>
-     <view class="message"></view>
-    <view class="item-cell-ft"></view>
+    <text class="message">{{name}}</text>
+    <!-- <view class="item-cell-ft"></view> -->
   </view>
 </view>
 
 <view class="item-cells">
-  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
-  <icon class="icon iconfont icon-wxbzhanghu"/>
+  <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="bindName">
+    <icon class="icon iconfont icon-wxbzhanghu" />
     <view class="item-cell-bd">
       <text class="detail-text">学号</text>
     </view>
-     <view class="message"></view>
-    <view class="item-cell-ft"></view>
+    <text class="message">{{number}}</text>
   </view>
 </view>
 
 <view class="item-cells">
-  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
- <icon class="icon iconfont.icon-xingbie"/>
+  <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="bindName">
+    <icon class="icon iconfont.icon-xingbie" />
     <view class="item-cell-bd">
       <text class="detail-text">性别</text>
     </view>
-     <view class="message"></view>
-    <view class="item-cell-ft"></view>
+    <view wx:if="{{sex=='0'}}">
+      <text class="message">男</text>
+    </view>
+    <view wx:else>
+      <text class="message">女</text>
+    </view>
+    <!-- <view class="item-cell-ft"></view> -->
   </view>
 </view>
 
 <view class="item-cells">
-  <view class="item-cell item-cell-access"  hover-class="weui-cell_active"  bindtap="bindName">
- <icon class="icon iconfont.icon-weibiaoti-"/>
+  <view class="item-cell item-cell-access" hover-class="weui-cell_active" bindtap="bindName">
+    <icon class="icon iconfont.icon-weibiaoti-" />
     <view class="item-cell-bd">
       <text class="detail-text">联系方式</text>
     </view>
-    <view class="message"></view>
-    <view class="item-cell-ft"></view>
+    <view class="message">{{phone}}</view>
+    <!-- <view class="item-cell-ft"></view> -->
   </view>
 </view>
-

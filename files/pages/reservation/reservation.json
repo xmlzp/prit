@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "我的预定",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1fd0a0"
+}
