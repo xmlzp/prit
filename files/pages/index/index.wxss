@@ -47,7 +47,7 @@ swiper{
 .traval_txxt{
 	width: 65%;
 	margin-left: 3%;
-}
+}                          
 .traval_tx{
 	font-size: 34rpx;
 	font-family: Adobe 黑体 Std;
@@ -57,12 +57,12 @@ swiper{
 	height: 50rpx;  
 }                        
 .texT_MOMOY{
-	font-size: 48rpx !important;
+	font-size: 48rpx !important; 
 	color: #ff5501;
 	margin-left: 3%;      
 }
 .texT_M{
-	margin-top: 2%;
+	margin-top: 15%;
 	margin-left: 2%; 
 	font-size: 28rpx !important;
 	color: #ff5501;

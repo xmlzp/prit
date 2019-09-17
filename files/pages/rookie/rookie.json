@@ -1,5 +1,6 @@
 {
    "navigationBarTitleText": "兼职",
      "enablePullDownRefresh": false,
-	 "navigationBarBackgroundColor": "#22d1a3"
+	 "navigationBarBackgroundColor": "#22d1a3",
+   "navigationBarTextStyle": "white"
 }

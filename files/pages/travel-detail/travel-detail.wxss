@@ -12,13 +12,13 @@
   } 
   .introduce{
 	  display: flex;
-	  align-items: center;
+	  align-items: center;   
 	  padding: 20rpx 0rpx;
   }
   .introduce image{
 	  height: 30rpx;
 	  width: 20rpx;
-  }      
+  }                              
   .introduce text{
 	  font-family: Adobe 黑体 Std;
 	  font-size: 32rpx;
@@ -30,7 +30,7 @@
 	  width: 240rpx;
   }
    .introduces{
-	   display: flex;
+	   padding-bottom: 10px;
    }
    .introduces text{
 	   font-size: 26rpx;
@@ -53,4 +53,7 @@
    .introduc_flow_text{
 	     font-size: 28rpx !important;
 		  color: #666666;
+   }
+   .require_cont{
+	   margin-left: 4%;
    }

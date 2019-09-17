@@ -11,8 +11,8 @@
 }
 .company text{ 
 	width: 50%;
-	margin-left: 2%;
-	color: #adadad;
+	/* margin-left: 2%;
+	color: #adadad; */
 }
 .ptit-list{      
 	width: 90%;      
