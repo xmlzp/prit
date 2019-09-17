@@ -12,18 +12,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'https://campus.jiandanst.com/index/wxapi/parttime',
-      method: 'POST',
-      dataType: 'json',
-      header: { "Content-Type": "application/x-www-form-urlencoded" },
-      success: (res) => {
-        console.log(res.data)
-        this.setData({
-          formation: res.data
-        })
+    var that = this;
+    wx.showToast({
+      icon: 'loading',
+      title:'加载中',
+      duration: 1000,
+      success: function () {
+        setTimeout(function () {
+          var value = wx.getStorageSync('id');
+              wx.request({
+                url: 'https://campus.jiandanst.com/index/wxapi/tour_collectreserve',
+                data: {
+                  consumer_id: value
+                },
+                header: {
+                  'content-type': 'application/json'
+                },
+                method: 'POST',
+                success: function (res) {
+                  if (res.data.length == 0) {
+                    that.setData({
+                      flag: false
+                    })
+                  } else {
+                    that.setData({
+                      reservation: res.data
+                    })
+                  }
+                }
+          })
+        }, 1000)
       },
-    });  
+    })
   },
 
   /**

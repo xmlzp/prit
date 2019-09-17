@@ -1,4 +1,5 @@
 <!--pages/travel-detail/travel-detail.wxml-->
+<import src="../../src/wetoast.wxml" />
 <view class="ptit-list">
 	<view class="item">
 	      <view class="item-main">
@@ -95,3 +96,5 @@
 	  		<view class="collect">收藏</view>
 	  		<button bindtap="reservation">立即预定</button>
 </view>
+<!--提示-->
+<template is="wetoast" data="{{...__wetoast__}}" />

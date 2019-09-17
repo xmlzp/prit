@@ -25,6 +25,10 @@
   width: 160rpx;
   height: 50rpx;
 }
+.no-msg{
+  margin-top:10rpx; 
+  color:#B0B0B0;
+}
 
 /*详情样式*/
 

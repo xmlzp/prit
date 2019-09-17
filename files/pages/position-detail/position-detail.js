@@ -1,4 +1,5 @@
 // pages/position-detail/position-detail.js
+let app = getApp();
 Page({
 
   /**
@@ -43,12 +44,10 @@ Page({
   /**
    * 立即报名
    */
-  sign: function() {;
-    wx.getStorage({
-      key: 'phone',
-      success(res) {
-        console.log(res.data);
-         if(res.data =="" || res.data == null){
+  sign: function() {
+    var that = this;
+    var value = wx.getStorageSync('id');
+    if (value == 0 || value == ""){
            wx.showModal({
              title: '提示',
              content: '尊敬的用户，你未登录，请登录后立即报名',
@@ -63,13 +62,34 @@ Page({
              }
            })
          } else {
-           wx.showToast({
-             title: '报名成功',
-             icon: 'success',
-             duration: 2000,
+           wx.request({
+             url: 'https://campus.jiandanst.com/index/wxapi/parttime_reg',
+             data: {
+               consumer_id:value,
+               part_time_id: that.data.part_time_id
+             },
+             header: {
+               'content-type': 'application/json'
+             },
+             method: 'POST',
+             success: function (res) {
+               if (res.data == 1) {
+                 wx.showToast({
+                   title: '报名成功',
+                   icon: 'success',
+                   duration: 2000,
+                 })
+                 return true;
+               } else if (res.data == 3) {
+                 new app.WeToast();
+                 that.wetoast.toast({
+                   title: "已报名",
+                   duration: 1000
+                 })
+                 return false;
+               }
+             }
            })
          }
       }
-    })
-  }
 })
