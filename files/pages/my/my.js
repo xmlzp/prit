@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id:''
+    id: ''
   },
 
   /**
@@ -26,11 +26,9 @@ Page({
    */
   onShow: function() {
     var that = this;
-    wx.getStorage({
-      key: 'id',
-      success: function(res) {
-        console.log(res)
-        if (res.data == 0) {
+    var value = wx.getStorageSync('id');
+    setTimeout(function () {
+    if (value == 0||value =="") {
           that.setData({
             flag: false
           })
@@ -38,7 +36,7 @@ Page({
           wx.request({
             url: 'https://campus.jiandanst.com/index/wxapi/consumer',
             data: {
-              consumer_id: res.data
+              consumer_id: value
             },
             header: {
               'content-type': 'application/json'
@@ -48,14 +46,12 @@ Page({
               that.setData({
                 flag: true,
                 name: res.data.consumer_name,
-                 id:res.data.consumer_id
+                id: res.data.consumer_id
               })
             }
           })
-
         }
-      },
-    })
+    },500)
   },
 
   /**
@@ -102,7 +98,7 @@ Page({
       })
     } else {
       wx.navigateTo({
-        url: '../personal/personal?id='+this.data.id,
+        url: '../personal/personal?id=' + this.data.id,
       })
     }
   },
@@ -145,17 +141,49 @@ Page({
    * 我的预定
    */
   reservation: function() {
-    wx.navigateTo({
-      url: '../reservation/reservation',
-    })
+    if (this.data.id == "" || this.data.id== null) {
+      wx.showModal({
+        title: '提示',
+        content: '尊敬的用户，你未登录，请登录后查看我的预定',
+        confirmText: "确定",
+        showCancel: false,
+        success: function(res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+          }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '../reservation/reservation',
+      })
+    }
   },
 
   /**
    * 我的报名
    */
   sign: function() {
-    wx.navigateTo({
-      url: '../sign/sign',
-    })
+    if (this.data.id == "" || this.data.id == null) {
+      wx.showModal({
+        title: '提示',
+        content: '尊敬的用户，你未登录，请登录后查看我的报名',
+        confirmText: "确定",
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+          }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '../sign/sign',
+      })
+    }
   },
 })

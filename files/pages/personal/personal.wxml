@@ -27,12 +27,7 @@
     <view class="item-cell-bd">
       <text class="detail-text">性别</text>
     </view>
-    <view wx:if="{{sex=='0'}}">
-      <text class="message">男</text>
-    </view>
-    <view wx:else>
-      <text class="message">女</text>
-    </view>
+      <text class="message">{{sex}}</text>
     <!-- <view class="item-cell-ft"></view> -->
   </view>
 </view>

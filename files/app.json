@@ -12,7 +12,8 @@
     "pages/personal/personal",
     "pages/travel-detail/travel-detail",
     "pages/reservation/reservation",
-    "pages/sign/sign"
+    "pages/sign/sign",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
