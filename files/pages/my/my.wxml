@@ -77,7 +77,7 @@
 
 
 
-<!--提示-->
+<!--提示--->
 <template is="wetoast" data="{{...__wetoast__}}" />
 
 <view class="item-cells ext-box" hidden='{{usersetting}}'>
