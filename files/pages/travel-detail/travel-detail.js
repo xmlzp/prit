@@ -15,31 +15,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    let tour_id = options.tour_id
-    console.log(options.tour_id)
-    var windowHeight = wx.getSystemInfoSync().windowHeight
-    console.log(wx.getSystemInfoSync().windowHeight)
-    //跳转详情页面
-    this.setData({
-      windowHeight: windowHeight,
-      tour_id: tour_id
-    });
-    wx.request({
-      url: 'https://campus.jiandanst.com/index/wxapi/tour_info',
-      method: 'POST',
-      dataType: 'json',
-      data: {
-        "tour_id": tour_id
-      },
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      success: (res) => {
-        console.log(res.data)
-        this.setData({
-          detalis: res.data
-        })
-      },
+    let tour_id = options.tour_id;
+    var windowHeight = wx.getSystemInfoSync().windowHeight;
+    var that = this;
+    wx.showToast({
+      icon: 'loading',
+      title: '加载中',
+      duration: 1000,
+      success: function() {
+        setTimeout(function() {
+          //跳转详情页面
+          that.setData({
+            windowHeight: windowHeight,
+            tour_id: tour_id
+          });
+          wx.request({
+            url: 'https://campus.jiandanst.com/index/wxapi/tour_info',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+              "tour_id": tour_id
+            },
+            header: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            success: (res) => {
+              that.setData({
+                detalis: res.data
+              })
+            }
+          })
+        }, 20)
+      }
     });
   },
 
@@ -131,7 +138,7 @@ Page({
               duration: 2000,
             })
             return true;
-          } else if(res.data == 3) {
+          } else if (res.data == 3) {
             new app.WeToast();
             that.wetoast.toast({
               title: "已预订",

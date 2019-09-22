@@ -2,8 +2,8 @@
 <import src="../../src/wetoast.wxml" />
 <!--顶部-->
 <view class="my-header">
-  <view class="item-user-avatar">
-    <image class="user-avatar" src="/images/user.png" mode="aspectFill" bindtap="option"></image>
+  <view class="item-user-avatar" mode="aspectFill" bindtap="option">
+   <open-data  type="userAvatarUrl"></open-data>
   </view>
 
   <!--登录-->
