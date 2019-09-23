@@ -13,7 +13,8 @@
     "pages/travel-detail/travel-detail",
     "pages/reservation/reservation",
     "pages/sign/sign",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/collection/collection"
   ],
   "window": {
     "backgroundTextStyle": "light",

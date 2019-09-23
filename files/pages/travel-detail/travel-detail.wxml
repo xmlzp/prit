@@ -1,107 +1,108 @@
 <!--pages/travel-detail/travel-detail.wxml-->
 <import src="../../src/wetoast.wxml" />
 <view class="ptit-list">
-	<view class="item">
-	      <view class="item-main">
-	      <view class="job">
-	          <text class="job-position" data-id="{{id}}">{{detalis.tour_name}}</text>
-	      </view>
-	      <view class="company">
-			  <view class="_oneptit_time">
-				  <view class="ptit_time">
-					     <icon class=" iconfont icon-didian" />
-					  <text>{{detalis.tour_address}}</text>
-				   </view>
-				  <view class="ptit_time">
-					  <view>
-             <icon class="icon-phone iconfont icon-weibiaoti-" />
-				  </view>
-					  <view> 咨询热线:{{detalis.tour_phone}}</view>
-				  </view>
-				  <view class="resource">
-					  <view>价格:{{detalis.tour_price}}/人</view>
-				  </view>
-			  </view>
-			  <view>
-				<image class="company_img" src="../../images/dist/resource.png"></image>
-			  </view>
-	      </view>
-	      <view class="secondary">
-	          <text class="secondary-list">纯玩</text>
-	          <text class="secondary-List">上门接送</text>
-	          <text class="secondary-list">随时发团</text>
-	          <text class="date">发布时间:{{detalis.tour_time}}</text>
-	      </view>
+  <view class="item">
+    <view class="item-main">
+      <view class="job">
+        <text class="job-position" data-id="{{id}}">{{detalis.tour_name}}</text>
+      </view>
+      <view class="company">
+        <view class="_oneptit_time">
+          <view class="ptit_time">
+            <icon class=" iconfont icon-didian" />
+            <text>{{detalis.tour_address}}</text>
+          </view>
+          <view class="ptit_time">
+            <view>
+              <icon class="icon-phone iconfont icon-weibiaoti-" />
+            </view>
+            <view> 咨询热线:{{detalis.tour_phone}}</view>
+          </view>
+          <view class="resource">
+            <view>价格:{{detalis.tour_price}}/人</view>
+          </view>
+        </view>
+        <view>
+          <image class="company_img" src="../../images/dist/resource.png"></image>
+        </view>
+      </view>
+      <view class="secondary">
+        <text class="secondary-list">纯玩</text>
+        <text class="secondary-List">上门接送</text>
+        <text class="secondary-list">随时发团</text>
+        <text class="date">发布时间:{{detalis.tour_time}}</text>
+      </view>
 
-	      </view>
-	  </view>
-	  <view class="introduce">
-		  <image src="../../images/dist/lvse.png"></image>
-		  <text>景区介绍</text>
-	  </view>
-	  <view class="introduces">
-	  		<!--  <image src="{{detalis.tour_pic_one}}"></image> -->
-	  		  <text>【青城山景区】世界文化遗产、全 国重点文物保护单位,国家AAAAA 级旅游景区、全球道教天师道圣地， 中国四大道教名山之一，五大仙山之一，中国道教的发祥地之一，森林覆盖率%90以上，人杰地灵，风景优美享有 青城天下幽，的美誉
+    </view>
+  </view>
+  <view class="introduce">
+    <image src="../../images/dist/lvse.png"></image>
+    <text>景区介绍</text>
+  </view>
+  <view class="introduces">
+    <!--  <image src="{{detalis.tour_pic_one}}"></image> -->
+    <text>【青城山景区】世界文化遗产、全 国重点文物保护单位,国家AAAAA 级旅游景区、全球道教天师道圣地， 中国四大道教名山之一，五大仙山之一，中国道教的发祥地之一，森林覆盖率%90以上，人杰地灵，风景优美享有 青城天下幽，的美誉
 			 </text>
-	  </view>
-	  <view class="introduces_img">
-		  <image src="{{detalis.tour_pic_two}}"></image>
-		  <image src="{{detalis.tour_pic_three}}"></image>
-		  <image src="{{detalis.tour_pic_four}}"></image>
-	  </view>
-	  <view class="introduce">
-	  		  <image src="../../images/dist/blue.png"></image>
-	  		  <text>服务流程</text>
-	  </view>
-	  <view class="introduc_flow">
-	  		<view>
-				<view class="introduc_flow_text">预定行程》</view>
-				<view>确认行程</view>
-				<view>立即预定</view>
-			</view>
-			<view>
-				<view class="introduc_flow_text">联系商家》</view>
-				<view>预定后与商家</view>
-				<view>联系商家</view>
-			</view>
-			<view>
-				<view class="introduc_flow_text">开始行程》</view>
-				<view>在商家的组织</view>
-				<view>下进行</view>
-			</view>
-			<view>
-				<view class="introduc_flow_text">完成行程</view>
-				<view>完成本次行程</view>
-				<view>结算费用</view>
-			</view>
-	  </view>
-	  <view class="introduce">
-	  		  <image src="../../images/dist/yowllow.png"></image>
-	  		  <text>行程内容</text>
-	  </view>
-	  <!-- 工作要求 -->
-	  <view>
-	  		  <view class="require_content">【行程时间】</view>
-			  <view class="require_cont">{{detalis.tour_trip_timetext}}</view>
-			  <view class="require_content">【集合地点】 </view>
-			  <view class="require_cont">{{detalis.tour_trip_venue}}</view>
-	  		  <view class="require_content">【行程包含】</view>
-			  <view class="require_cont">{{detalis.tour_trip_contain}}</view>
-	  		  <view class="require_content">【行程路线】</view>
-			  <view class="require_cont">{{detalis.tour_trip_route}}</view>
-	  		  <view class="require_content">【温馨提示】</view>
-			  <view class="require_cont">{{detalis.tour_trip_tips}}</view>
-			  <view class="require_content">【郑重承诺】</view>
-			  <view class="require_cont">{{detalis.tour_trip_promise}}</view>
-			  <view class="require_content">【商家联系方式】</view>
-			  <view class="require_cont">{{detalis.tour_trip_phone}}</view>
-	  </view>
+  </view>
+  <view class="introduces_img">
+    <image src="{{detalis.tour_pic_two}}"></image>
+    <image src="{{detalis.tour_pic_three}}"></image>
+    <image src="{{detalis.tour_pic_four}}"></image>
+  </view>
+  <view class="introduce">
+    <image src="../../images/dist/blue.png"></image>
+    <text>服务流程</text>
+  </view>
+  <view class="introduc_flow">
+    <view>
+      <view class="introduc_flow_text">预定行程》</view>
+      <view>确认行程</view>
+      <view>立即预定</view>
+    </view>
+    <view>
+      <view class="introduc_flow_text">联系商家》</view>
+      <view>预定后与商家</view>
+      <view>联系商家</view>
+    </view>
+    <view>
+      <view class="introduc_flow_text">开始行程》</view>
+      <view>在商家的组织</view>
+      <view>下进行</view>
+    </view>
+    <view>
+      <view class="introduc_flow_text">完成行程</view>
+      <view>完成本次行程</view>
+      <view>结算费用</view>
+    </view>
+  </view>
+  <view class="introduce">
+    <image src="../../images/dist/yowllow.png"></image>
+    <text>行程内容</text>
+  </view>
+  <!-- 工作要求 -->
+  <view>
+    <view class="require_content">【行程时间】</view>
+    <view class="require_cont">{{detalis.tour_trip_timetext}}</view>
+    <view class="require_content">【集合地点】 </view>
+    <view class="require_cont">{{detalis.tour_trip_venue}}</view>
+    <view class="require_content">【行程包含】</view>
+    <view class="require_cont">{{detalis.tour_trip_contain}}</view>
+    <view class="require_content">【行程路线】</view>
+    <view class="require_cont">{{detalis.tour_trip_route}}</view>
+    <view class="require_content">【温馨提示】</view>
+    <view class="require_cont">{{detalis.tour_trip_tips}}</view>
+    <view class="require_content">【郑重承诺】</view>
+    <view class="require_cont">{{detalis.tour_trip_promise}}</view>
+    <view class="require_content">【商家联系方式】</view>
+    <view class="require_cont">{{detalis.tour_trip_phone}}</view>
+  </view>
 </view>
 <view style="height:10vh;"></view>
-  <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
-	  		<image src="../../images/dist/tc.png"></image>
-	  		<view class="collect">收藏</view>
-	  		<button bindtap="reservation">立即预定</button>
+<view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
+  <image wx:if="{{tour_collect_st==0}}" src="../../images/dist/sc.png" bindtap="collection"></image>
+  <image wx:else src="../../images/dist/tc.png"></image>
+  <view class="collect">收藏</view>
+  <button bindtap="reservation" hover-class="btn-hover">立即预定</button>
 </view>
 <!--提示-->
 <template is="wetoast" data="{{...__wetoast__}}" />

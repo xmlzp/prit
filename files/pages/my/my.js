@@ -119,11 +119,25 @@ Page({
    * 我的收藏
    */
   collection: function() {
-    new app.WeToast();
-    this.wetoast.toast({
-      title: "暂未开放",
-      duration: 1000
-    })
+    if (this.data.id == "" || this.data.id == null) {
+      wx.showModal({
+        title: '提示',
+        content: '尊敬的用户，你未登录，请登录后查看我的收藏',
+        confirmText: "确定",
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+          }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '../collection/collection',
+      })
+    }
   },
 
   /**

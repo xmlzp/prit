@@ -6,9 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    tour_collect_st: '',
     windowHeight: '',
     tour_id: '', //旅游详情页面的id
-    detalis: '' //详情页面的数据
+    detalis: '', //详情页面的数据
+    userId:''
   },
 
   /**
@@ -17,6 +19,8 @@ Page({
   onLoad: function(options) {
     let tour_id = options.tour_id;
     var windowHeight = wx.getSystemInfoSync().windowHeight;
+    var value = wx.getStorageSync('id');
+    console.log(value);
     var that = this;
     wx.showToast({
       icon: 'loading',
@@ -34,14 +38,17 @@ Page({
             method: 'POST',
             dataType: 'json',
             data: {
-              "tour_id": tour_id
+              "tour_id": tour_id,
+              "consumer_id": value,
             },
             header: {
               "Content-Type": "application/x-www-form-urlencoded"
             },
             success: (res) => {
               that.setData({
-                detalis: res.data
+                detalis: res.data,
+                userId: value,
+                tour_collect_st: res.data.tour_collect_st
               })
             }
           })
@@ -100,12 +107,65 @@ Page({
   },
 
   /**
+   * 收藏 
+   */
+  collection:function(){
+    var that = this;
+    if (that.data.userId == 0 || that.data.userId == "") {
+      wx.showModal({
+        title: '提示',
+        content: '尊敬的用户，你未登录，请登录后收藏',
+        confirmText: "确定",
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+          }
+        }
+      })
+    } else {
+      wx.request({
+        url: 'https://campus.jiandanst.com/index/wxapi/tour_collect',
+        data: {
+          consumer_id: that.data.userId,
+          tour_id: that.data.tour_id
+        },
+        header: {
+          'content-type': 'application/json'
+        },
+        method: 'POST',
+        success: function (res) {
+          if (res.data == 1) {
+            wx.showToast({
+              title: '收藏成功',
+              icon: 'success',
+              duration: 2000,
+            })
+            that.setData({
+              tour_collect_st:true
+            })            
+            return true;
+          } else if (res.data == 3) {
+            new app.WeToast();
+            that.wetoast.toast({
+              title: "已收藏",
+              duration: 1000
+            })
+            return false;
+          }
+        }
+      })
+    }
+  },
+
+  /**
    * 立即预定
    */
   reservation: function() {
     var that = this;
-    var value = wx.getStorageSync('id');
-    if (value == 0 || value == "") {
+    if (that.data.userId == 0 || that.data.userId == "") {
       wx.showModal({
         title: '提示',
         content: '尊敬的用户，你未登录，请登录后立即预定',
@@ -123,7 +183,7 @@ Page({
       wx.request({
         url: 'https://campus.jiandanst.com/index/wxapi/tour_reserve',
         data: {
-          consumer_id: value,
+          consumer_id: that.data.userId,
           tour_id: that.data.tour_id
         },
         header: {

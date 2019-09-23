@@ -92,7 +92,6 @@ Page({
       },
       method: 'POST', 
       success: function (res) {
-        console.log(res.data);
         if(res.statusCode == 500){
               return false;
         }
