@@ -1,7 +1,7 @@
 /* pages/rookie/rookie.wxss */
 .company image{
 	width: 25rpx;
-	height: 30rpx;
+	height: 25rpx;
 }
 .company text{
 	width: 55%;
@@ -16,7 +16,7 @@
 
 .list-img{
 	width: 100%;
-}
+}                 
 .item{
     display: flex;   
     width: 100%;

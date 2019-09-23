@@ -159,6 +159,7 @@
 	height: 40rpx;
 	margin-left: 4%;
 }
+
 .button-t button{
 	padding: 0px;
 	width:77%; 
@@ -167,7 +168,10 @@
 	background: #1ed09f;
 	border-radius: 0px;
 	color: #ffffff;
-}           
+}     
+  .btnhover{
+   	background-color:black;
+   }   
 .collect{
 	width: 10%;
 	margin-left: 2%;       

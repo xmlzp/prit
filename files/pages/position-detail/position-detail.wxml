@@ -52,7 +52,7 @@
  <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
 		<image src="../../images/dist/tc.png"></image>
 		<view class="collect">收藏</view>
-		<button bindtap="sign">立即报名</button>
+		<button hover="true" bindtap="sign" class="btnh"  >立即报名</button>
 </view>
 <!--提示-->
 <template is="wetoast" data="{{...__wetoast__}}" />

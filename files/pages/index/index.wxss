@@ -17,7 +17,9 @@ swiper{
 	align-items:center;
 	padding: 20rpx 0rpx;
 }
-.list-contone image{
+.list-contone_image{
+	position: absolute;
+	left: 5%;
 	width: 30rpx;
 	height: 30rpx;    
 }  
@@ -25,8 +27,19 @@ swiper{
 	font-size: 38rpx;     
 	font-family: Adobe 黑体 Std;	
 }
+.taber_textes{
+	color: #1fd4ae;
+}
+.red{
+	color: #333333;
+}
 .text_comton{ 
-	margin-left: 11%;
+	/* margin-left: 9%; */
+}
+.texT_Comton{
+	width: 45%;
+	display: flex;
+	justify-content: center;
 }
 .account_img{  
 	margin-left: 1%;
@@ -39,6 +52,7 @@ swiper{
 .travel_titile{             
 	display: flex;
 	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 10rpx;
 }
 .traval_txxt text{
 	font-size: 34rpx;
@@ -54,7 +68,7 @@ swiper{
 }
 .teavaL_TOW{
 	width: 160rpx; 
-	height: 50rpx;  
+	height: 50rpx;   
 }                        
 .texT_MOMOY{
 	font-size: 48rpx !important; 
@@ -66,7 +80,7 @@ swiper{
 	margin-left: 2%; 
 	font-size: 28rpx !important;
 	color: #ff5501;
-}
+}       
 .btn-cancel_herder{ 
 	display: flex;         
 	align-items: center;
@@ -77,8 +91,9 @@ swiper{
 }
 .account_texts{ 
 	margin-left: 2%;   
-	font-size: 22rpx;
-	font-family:  Adobe 黑体 Std;
+	font-size: 20rpx;
+	color: #adadad;
+	font-family: Adobe 黑体 Std;
 }
 .Account{
 	margin-left: 2%;

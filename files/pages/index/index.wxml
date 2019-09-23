@@ -20,14 +20,16 @@
         </swiper-item>
     </swiper>
 	<view class="list-contone">
-		<image src="../../images/dist/lvse.png"></image>
-		<text class="account_img">精选</text>
-		<text class="text_comton">周边游</text>
+		<image class="list-contone_image" src="../../images/dist/lvse.png"></image>
+		<view wx:for="{{navigation}}" class="texT_Comton" catchtap="pitch" data-id='{{item.id}}' data-index="{{index}}">
+			<text class="{{index == idx? 'taber_textes' : 'red'}}">{{item.name}}</text>
+		</view>
+		<!-- <text class="text_comton">周边游</text>
 		<text class="text_comton">情侣游</text>
-		<text class="text_comton">游乐园</text>
+		<text class="text_comton">游乐园</text> -->
 	</view>
 	<view class="outer_layer" >
-		<view class="travel_titile" catchtap="traveldetail" wx:for="{{travel}}" data-id='{{item.tour_id}}'>
+		<view class="travel_titile"  wx:for="{{travel}}" data-id='{{item.tour_id}}' catchtap="traveldetail">    
 			<view class="travel_img">
 				<image src="{{item.tour_pic_one}}"></image>
 			</view>

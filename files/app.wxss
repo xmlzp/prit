@@ -172,9 +172,8 @@
   height: 40rpx;
   margin-left: 4%;
 }
-
 .button-t button {
-  padding: 0px;
+ padding: 0px;
   width: 77%;
   margin: 0px;
   margin-left: 3%;
@@ -182,7 +181,9 @@
   border-radius: 0px;
   color: #fff;
 }
-
+.button-hover{
+	background-color:#1cbb9a !important;
+}
 .collect {
   width: 10%;
   margin-left: 2%;
