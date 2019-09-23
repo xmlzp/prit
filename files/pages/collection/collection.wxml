@@ -1,0 +1,43 @@
+<scroll-view scroll-y style="height: {{viewHeigh}}px;" bindscrolltolower="lower">
+  <view class="container" wx:if="{{flag == false}}">
+    <image src="../../images/error.png"></image>
+    <view class="no-msg">暂无信息</view>
+  </view>
+  <view wx:else>
+    <view class="outer_layer" wx:if="{{tour == true}}">
+      <view bindtap="travelDetailTap" class="tour-list" wx:for="{{reservation}}" data-id='{{item.tour_id}}'>
+        <view class="travel_img">
+          <image src="{{item.tour_pic_one}}"></image>
+        </view>
+        <view class="traval_txxt">
+          <text>{{item.tour_name}}</text>
+          <view class="Account">(无强制消费/无隐形购物店)...</view>
+          <view class="btn-cancel_herder">
+            <view style="display: flex;width: 40%;">
+              <text class="texT_MOMOY">{{item.tour_price}}</text>
+              <text class="texT_M">元</text>
+            </view>
+          </view>
+          <view class="account_texts">报名时间{{item.tour_time}}到{{item.tour_time_end}},报完即止!</view>
+        </view>
+      </view>
+    </view>
+    <view class="outer_layer" wx:if="{{rookie == true}}">
+      <view bindtap="positionDetailTap" class="job-list" wx:for="{{job}}" data-id='{{item.part_time_id}}'>
+        <view class="job">
+          <text class="job-position">{{item.part_time_name}}</text>
+          <text class="job-Salary">{{item.part_time_wages}}</text>
+        </view>
+        <view class="company">
+          <image src="../../images/site.png"></image>
+          <text>{{item.part_time_shop_address}}</text>
+        </view>
+        <view class="secondary">
+          <text class="secondary-list">月结</text>
+          <text class="secondary-Iist">男女不限</text>
+          <text class="date">{{item.part_time_time}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

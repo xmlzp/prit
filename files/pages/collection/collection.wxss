@@ -1,0 +1,179 @@
+.travel_img image {
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 5px;
+}
+
+.tour-list {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.job-list {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.traval_txxt text {
+  font-size: 34rpx;
+  font-family: Adobe 黑体 Std;
+}
+
+.traval_txxt {
+  width: 65%;
+  margin-left: 3%;
+}
+
+.traval_tx {
+  font-size: 34rpx;
+  font-family: Adobe 黑体 Std;
+}
+
+.teavaL_TOW {
+  width: 160rpx;
+  height: 50rpx;
+}
+
+.texT_MOMOY {
+  font-size: 48rpx !important;
+  color: #ff5501;
+  margin-left: 3%;
+}
+
+.texT_M {
+  margin-top: 15%;
+  margin-left: 2%;
+  font-size: 28rpx !important;
+  color: #ff5501;
+}
+
+.btn-cancel_herder {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-cancel_herder image {
+  margin-left: 29%;
+}
+
+.account_texts {
+  margin-left: 2%;
+  font-size: 22rpx;
+  font-family: Adobe 黑体 Std;
+}
+
+.Account {
+  margin-left: 2%;
+  width: 100%;
+  font-family: Adobe 黑体 Std;
+  font-size: 34rpx;
+}
+
+.outer_layer {
+  margin-bottom: 20rpx;
+}
+
+.list-img {
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+  background-color: #fff;
+}
+
+.item-img {
+  padding: 32rpx 28rpx;
+}
+
+.img {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item-main {
+  flex: 1;
+  padding: 32rpx 0rpx 10rpx 0;
+  border-bottom: 1rpx solid #dcdcdc;
+  line-height: 1.4;
+}
+
+.job {
+  margin-bottom: 4rpx;
+  padding-right: 80rpx;
+  position: relative;
+}
+
+.job-Salary {
+  font-size: 32rpx;
+  font-family: [PingFang];
+  color: #ff7734;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.company {
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 4rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.secondary {
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 2%;
+}
+
+.secondary-list {
+  font-size: 24rpx;
+  color: #fff;
+  margin-right: 8rpx;
+  background: #1ed09f;
+  padding: 5rpx;
+  border-radius: 5px;
+}
+
+.secondary-Iist {
+  font-size: 24rpx;
+  color: #fff;
+  margin-right: 8rpx;
+  background: #333;
+  padding: 5rpx;
+  border-radius: 5px;
+}
+
+.date {
+  float: right;
+  color: #1ed09f;
+}
+
+.teavaL_TOW {
+  font-size: 24rpx;
+  width: 160rpx !important;
+  height: 45rpx !important;
+  margin-left: 33%;
+}
+
+.company image {
+  width: 25rpx;
+  height: 30rpx;
+}
+
+.company text {
+  width: 55%;
+  margin-left: 2%;
+  color: #adadad;
+}
