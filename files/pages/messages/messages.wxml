@@ -1,2 +1,5 @@
 <!--pages/messages/messages.wxml-->
-<text>正在开发</text>
+  <view class="container">
+    <image src="../../images/error.png"></image>
+    <view class="no-msg">正在开发中.....</view>
+  </view>

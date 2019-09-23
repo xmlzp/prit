@@ -9,11 +9,9 @@ page{
   background-color:#fff;
   position: relative;
 }
-
 .item-user-avatar{
     margin: 28rpx 0 28rpx 20rpx;
 }
-
 .user-avatar{
   width: 180rpx;
   height: 180rpx;
@@ -55,10 +53,9 @@ page{
   padding: 36rpx 48rpx 36rpx 52rpx;
   display: flex;
   align-items: center;
-                           
 }
 .item-cell-bd{
-  flex: 1;        
+  flex: 1;
 }
 .item-cell-ft{
   position: relative;
@@ -76,8 +73,7 @@ page{
     position: absolute;
     top: 50%;
     right: 4rpx;
-    
-}                                                      
+}  
 .register{
   display:block;
   color:#fff;

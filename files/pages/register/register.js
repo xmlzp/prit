@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
     sexArray: ['男', '女'],
     name: null,
     code: null,
@@ -15,7 +14,6 @@ Page({
     consumer_id:''
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -110,14 +108,14 @@ Page({
   register: function () {
     var that = this
     new app.WeToast();
-    if (this.data.name == null) {
+    if (this.data.name == null||this.data.name=="") {
       that.wetoast.toast({
         title: "请输入姓名",
         duration: 1000
       })
       return false
     }
-    if (this.data.code == null) {
+    if (this.data.code == null||this.data.code=="") {
       that.wetoast.toast({
         title: "请输入学号",
         duration: 1000
