@@ -10,9 +10,12 @@
 	height: 30rpx;   
 }
 .company text{ 
-	width: 50%;
+	width: 70%;
 	/* margin-left: 2%;
 	color: #adadad; */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .ptit-list{      
 	width: 90%;      

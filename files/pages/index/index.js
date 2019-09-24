@@ -32,7 +32,7 @@ Page({
 		  			   data:{
 		  			       "tour_type":tour_type
 		  			   },
-		           header: {"Content-Type":"application/x-www-form-urlencoded"},
+					 header: {"Content-Type":"application/x-www-form-urlencoded"},
 		             success: (res)=>{ 
 		              console.log(res.data)
 		              this.setData({

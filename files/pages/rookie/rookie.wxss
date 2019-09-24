@@ -91,5 +91,5 @@
 	 font-size: 24rpx; 
 	 width: 160rpx !important;
 	 height: 45rpx !important; 
-	 margin-left: 33%;
+	 margin-left: 16%;
   }

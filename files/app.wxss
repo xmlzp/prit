@@ -175,7 +175,7 @@
 .button-t button {
  padding: 0px;
   width: 77%;
-  margin: 0px;
+  margin: 0px;            
   margin-left: 3%;
   background: #1ed09f;
   border-radius: 0px;
