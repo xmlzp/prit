@@ -1,6 +1,6 @@
 .travel_img image {
   width: 210rpx;
-  height: 210rpx;
+  height: 150rpx;
   border-radius: 5px;
 }
 
@@ -42,14 +42,12 @@
 }
 
 .texT_MOMOY {
-  font-size: 48rpx !important;
+  font-size: 38rpx !important;
   color: #ff5501;
-  margin-left: 3%;
 }
 
 .texT_M {
-  margin-top: 15%;
-  margin-left: 2%;
+  margin-top: 4%;
   font-size: 28rpx !important;
   color: #ff5501;
 }
@@ -59,15 +57,20 @@
   align-items: center;
   width: 100%;
 }
-
+.Account_armay{
+	width: 20% ;
+	color: #666666;
+	font-size: 28rpx !important;
+	margin-top: 2%;
+}  
 .btn-cancel_herder image {
   margin-left: 29%;
 }
 
 .account_texts {
-  margin-left: 2%;
-  font-size: 22rpx;
-  font-family: Adobe 黑体 Std;
+		font-size: 20rpx;
+		color: #adadad;
+		font-family: Adobe 黑体 Std;
 }
 
 .Account {

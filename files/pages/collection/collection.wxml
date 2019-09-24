@@ -11,9 +11,9 @@
         </view>
         <view class="traval_txxt">
           <text>{{item.tour_name}}</text>
-          <view class="Account">(无强制消费/无隐形购物店)...</view>
           <view class="btn-cancel_herder">
-            <view style="display: flex;width: 40%;">
+            <view style="display: flex;align-items: center; width: 80%;">
+			  <text class="Account_armay">价格:</text>
               <text class="texT_MOMOY">{{item.tour_price}}</text>
               <text class="texT_M">元</text>
             </view>
