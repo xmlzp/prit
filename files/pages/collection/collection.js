@@ -30,8 +30,10 @@ Page({
             },
             method: 'POST',
             success: function (res) {
-              console.log(res.data);
               if (res.data.length == 0) {
+                that.setData({
+                  flagTour: false
+                })
               } else {
                 that.setData({
                   reservation: res.data,
@@ -50,10 +52,9 @@ Page({
             },
             method: 'POST',
             success: function (res) {
-              console.log(res.data);
               if (res.data.length == 0) {
                 that.setData({
-                  flag: false
+                  flagJob: false
                 })
               } else {
                 that.setData({

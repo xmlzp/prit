@@ -100,8 +100,8 @@
 <view style="height:10vh;"></view>
 <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
   <image wx:if="{{tour_collect_st==0}}" src="../../images/dist/sc.png" bindtap="collection"></image>
-  <image wx:else src="../../images/dist/tc.png"></image>
-  <view class="collect">收藏</view>
+  <image wx:else src="../../images/dist/tc.png" bindtap="collection"></image>
+  <view class="collect" bindtap="collection">收藏</view>
   <button bindtap="reservation" hover-class="btn-hover">立即预定</button>
 </view>
 <!--提示-->

@@ -1,5 +1,5 @@
 <scroll-view scroll-y style="height: {{viewHeigh}}px;" bindscrolltolower="lower">
-  <view class="container" wx:if="{{flag == false}}">
+  <view class="container" wx:if="{{flagTour == false && flagJob==false}}">
     <image src="../../images/error.png"></image>
     <view class="no-msg">暂无信息</view>
   </view>

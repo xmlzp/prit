@@ -45,7 +45,6 @@ Page({
               "Content-Type": "application/x-www-form-urlencoded"
             },
             success: (res) => {
-              console.log(res.data.job_collect_st)
               that.setData({
                 detali: res.data,
                 userId:value,

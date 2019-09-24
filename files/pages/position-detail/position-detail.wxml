@@ -50,8 +50,9 @@
 </view>
 <view style="height: 10vh;"></view>
  <view class="button-t" style="width: 100%; top:{{windowHeight-44}}px;">
-		<image src="../../images/dist/tc.png"></image>
-		<view class="collect">收藏</view>
+    <image wx:if="{{job_collect_st==0}}" src="../../images/dist/sc.png" bindtap="collection"></image>
+		<image wx:else src="../../images/dist/tc.png" bindtap="collection"></image>
+		<view class="collect" bindtap="collection">收藏</view>
 		<button hover="true" bindtap="sign" class="btnh"  >立即报名</button>
 </view>
 <!--提示-->
