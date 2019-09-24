@@ -45,6 +45,7 @@ Page({
               "Content-Type": "application/x-www-form-urlencoded"
             },
             success: (res) => {
+              console.log(res.data)
               that.setData({
                 detalis: res.data,
                 userId: value,

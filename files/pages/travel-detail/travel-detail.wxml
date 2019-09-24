@@ -41,7 +41,7 @@
   </view>
   <view class="introduces">
     <!--  <image src="{{detalis.tour_pic_one}}"></image> -->
-    <text>【青城山景区】世界文化遗产、全 国重点文物保护单位,国家AAAAA 级旅游景区、全球道教天师道圣地， 中国四大道教名山之一，五大仙山之一，中国道教的发祥地之一，森林覆盖率%90以上，人杰地灵，风景优美享有 青城天下幽，的美誉
+    <text>{{detalis.tour_introduce}}
 			 </text>
   </view>
   <view class="introduces_img">
